@@ -1,113 +1,381 @@
+import Link from "next/link";
+import { ChevronRight } from "./icons/ChevronRight";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="flex flex-col bg-black justify-center">
+      <div className="text-center py-4 bg-gray-700">Menu</div>
+      <div className="bg-[url('/picture.jpg')] bg-cover bg-center bg-no-repeat">
+        <div className="flex flex-col justify-center items-center bg-gradient-to-r from-transparent to-gray-800 px-8 text-gray-300 h-[75vh]">
+          <div className="flex w-full flex-col justify-center items-end">
+            <p className="font-thin text-xl xl:text-2xl">I&apos;m</p>
+            <p className="font-extrabold text-3xl xl:text-4xl my-2 text-white">
+              Fausto Fedele
+            </p>
+            <div className="relative w-full text-end">
+              <p className="font-thin text-xl xl:text-2xl">
+                Thanks for visiting !
+              </p>
+              <Link
+                href="#about-me"
+                className="absolute flex right-0 font-extralight text-gray-400 italic text-sm xl:text-base mt-1 hover:underline hover:text-white group"
+              >
+                Let&apos;s find out more about myself
+                <ChevronRight
+                  className="stroke-white hidden group-hover:block h-[18px] w-[18px] xl:h-[23px] xl:w-[23px]"
+                  height="20px"
+                  width="20px"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="p4 text-white max-w-[1500px] self-center">
+        <div className="flex items-center justify-between px-8 mt-6">
+          <div>
+            <p className="font-bold text-5xl">5+</p>
+            <p className="text-sm font-thin">Years of experience</p>
+          </div>
+          <div>
+            <p className="font-bold text-5xl">3</p>
+            <p className="text-sm font-thin">Companies</p>
+          </div>
+          <div>
+            <p className="font-bold text-5xl">16+</p>
+            <p className="text-sm font-thin">Projects</p>
+          </div>
+        </div>
+        <div
+          className="h-[800px] w-full my-5"
+          style={{
+            background: "radial-gradient(farthest-side, #fff, transparent)",
+          }}
+        >
+          <div className="flex flex-col justify-center items-center h-[650px] py-10">
+            <div className="flex justify-center items-center flex-1 gap-3">
+              <Image
+                unoptimized
+                alt="react-logo"
+                width={125}
+                height={125}
+                src="react.svg"
+              />
+              <Image
+                unoptimized
+                alt="next-logo"
+                width={125}
+                height={125}
+                src="next.svg"
+              />
+              <Image
+                unoptimized
+                alt="node-logo"
+                width={125}
+                height={125}
+                src="node.svg"
+              />
+              <Image
+                unoptimized
+                alt="typescript-logo"
+                width={115}
+                height={115}
+                src="typescript.svg"
+              />
+              <Image
+                unoptimized
+                alt="git-hub-logo"
+                width={125}
+                height={125}
+                src="git-hub.svg"
+              />
+              <Image
+                unoptimized
+                alt="material-logo"
+                width={125}
+                height={125}
+                src="material.svg"
+              />
+              <Image
+                unoptimized
+                alt="mysql-logo"
+                width={160}
+                height={160}
+                src="mysql.svg"
+              />
+            </div>
+            <div className="flex justify-center items-center flex-1 gap-3">
+              <Image
+                unoptimized
+                alt="aws-logo"
+                width={100}
+                height={100}
+                src="aws.svg"
+              />
+              <Image
+                unoptimized
+                alt="graphql-logo"
+                width={100}
+                height={100}
+                src="graphql.svg"
+              />
+              <Image
+                unoptimized
+                alt="docker-logo"
+                width={100}
+                height={100}
+                src="docker.svg"
+              />
+              <Image
+                unoptimized
+                alt="jira-logo"
+                width={100}
+                height={100}
+                src="jira.svg"
+              />
+              <Image
+                unoptimized
+                alt="confluence-logo"
+                width={100}
+                height={100}
+                src="confluence.svg"
+              />
+              <Image
+                unoptimized
+                alt="datadog-logo"
+                width={100}
+                height={100}
+                src="datadog.svg"
+              />
+              <Image
+                unoptimized
+                alt="jest-logo"
+                width={90}
+                height={90}
+                src="jest.svg"
+              />
+              <Image
+                unoptimized
+                alt="snowflake-logo"
+                width={100}
+                height={100}
+                src="snowflake.svg"
+              />
+              <Image
+                unoptimized
+                alt="figma-logo"
+                width={100}
+                height={100}
+                src="figma.svg"
+              />
+            </div>
+            <div className="flex justify-center items-center flex-1 gap-3">
+              <Image
+                unoptimized
+                alt="nest-logo"
+                width={80}
+                height={80}
+                src="nest.svg"
+              />
+              <Image
+                unoptimized
+                alt="android-logo"
+                width={80}
+                height={80}
+                src="android.svg"
+              />
+              <Image
+                unoptimized
+                alt="ios-logo"
+                width={80}
+                height={80}
+                src="ios.svg"
+              />
+              <Image
+                unoptimized
+                alt="keycloak-logo"
+                width={80}
+                height={80}
+                src="keycloak.svg"
+              />
+              <Image
+                unoptimized
+                alt="ant-d-logo"
+                width={70}
+                height={70}
+                src="ant-d.svg"
+              />
+              <Image
+                unoptimized
+                alt="java-logo"
+                width={80}
+                height={80}
+                src="java.svg"
+              />
+              <Image
+                unoptimized
+                alt="spring-logo"
+                width={70}
+                height={70}
+                src="spring.svg"
+              />
+              <Image
+                unoptimized
+                alt="drive-logo"
+                width={80}
+                height={80}
+                src="drive.svg"
+              />
+              <Image
+                unoptimized
+                alt="mssql-logo"
+                width={80}
+                height={80}
+                src="mssql.svg"
+              />
+              <Image
+                unoptimized
+                alt="xd-logo"
+                width={70}
+                height={70}
+                src="xd.svg"
+              />
+              <Image
+                unoptimized
+                alt="gitlab-logo"
+                width={80}
+                height={80}
+                src="gitlab.svg"
+              />
+            </div>
+            <div className="flex justify-center items-center flex-1 gap-3">
+              <Image
+                unoptimized
+                alt="google-cloud-logo"
+                width={50}
+                height={50}
+                src="google-cloud.svg"
+              />
+              <Image
+                unoptimized
+                alt="firebase-logo"
+                width={50}
+                height={50}
+                src="firebase.svg"
+              />
+              <Image
+                unoptimized
+                alt="linux-logo"
+                width={50}
+                height={50}
+                src="linux.svg"
+              />
+              <Image
+                unoptimized
+                alt="php-logo"
+                width={50}
+                height={50}
+                src="php.svg"
+              />
+              <Image
+                unoptimized
+                alt="redux-logo"
+                width={50}
+                height={50}
+                src="redux.svg"
+              />
+              <Image
+                unoptimized
+                alt="wordpress-logo"
+                width={50}
+                height={50}
+                src="wordpress.svg"
+              />
+              <Image
+                unoptimized
+                alt="dot-net-logo"
+                width={50}
+                height={50}
+                src="dot-net.svg"
+              />
+              <Image
+                unoptimized
+                alt="asana-logo"
+                width={50}
+                height={50}
+                src="asana.svg"
+              />
+              <Image
+                unoptimized
+                alt="angular-logo"
+                width={50}
+                height={50}
+                src="angular.svg"
+              />
+              <Image
+                unoptimized
+                alt="jenkins-logo"
+                width={50}
+                height={50}
+                src="jenkins.svg"
+              />
+              <Image
+                unoptimized
+                alt="redmine-logo"
+                width={75}
+                height={75}
+                src="redmine.svg"
+              />
+              <Image
+                unoptimized
+                alt="talend-logo"
+                width={50}
+                height={50}
+                src="talend.svg"
+                className="ml-[-20px]"
+              />
+              <Image
+                unoptimized
+                alt="trello-logo"
+                width={50}
+                height={50}
+                src="trello.svg"
+              />
+              <Image
+                unoptimized
+                alt="c-sharp-logo"
+                width={50}
+                height={50}
+                src="c-sharp.svg"
+              />
+              <Image
+                unoptimized
+                alt="azure-logo"
+                width={60}
+                height={60}
+                src="azure.svg"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="mt-[100px] text-white">
+        <h2 id="about-me">About me</h2>
+        <div>
+          <p>About me, according to me</p>
+          <span>
+            Degree on Software Engineering. 27 years old. Family lover. Dog
+            lover. Passionate. Problem-solving enthusiastic. Native contestant.
+            Committed.
+          </span>
+          <p>About me, according to others:</p>
+          <span>
+            Good communicator. Hyper productive. Self dependent. Kind. Sensible.
+            Friendly. Bossy. Fast learner. Business oriented employee.
+          </span>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
