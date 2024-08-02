@@ -131,15 +131,19 @@ const PhotoSphere = (props: { imageData: string[] }) => {
     const moveListener = (e: MouseEvent) => {
       const moved = starting - e.clientX;
       const movedAbs = Math.abs(moved);
-      if (listen && movedAbs > 5 && movedAbs < 500) {
+      if (listen && movedAbs > 5 && movedAbs < 1000) {
         if (Math.abs(moved) > maxValueMoved) {
           maxValueMoved = Math.abs(moved);
-          console.log("maxValueMoved", maxValueMoved);
-        }
-        timeout && clearTimeout(timeout);
-        timeout = setTimeout(() => {
+        } else {
           starting = e.clientX;
-        }, 50);
+          maxValueMoved = 0;
+          return;
+        }
+        // timeout && clearTimeout(timeout);
+        // timeout = setTimeout(() => {
+        //   starting = e.clientX;
+        //   maxValueMoved = 0;
+        // }, 1000);
         // console.log("starting", {
         //   starting,
         //   clientX: e.clientX,
@@ -147,11 +151,12 @@ const PhotoSphere = (props: { imageData: string[] }) => {
         //   page: e.pageX,
         //   containerWidth,
         // });
-        updateFrame(starting - e.clientX);
+        updateFrame((starting - e.clientX) * -0.08);
       }
     };
     const upListener = (e: MouseEvent) => {
       listen = false;
+      maxValueMoved = 0;
     };
     if (props.imageData) {
       const items = el.current!.children;
@@ -268,22 +273,13 @@ const PhotoSphere = (props: { imageData: string[] }) => {
       containerRef?.addEventListener("mousedown", downListener);
       window.addEventListener("mousemove", moveListener, true);
       window.addEventListener("mouseup", upListener);
-      window.addEventListener("resize", () => {
-        if (el.current) {
-          console.log(
-            "el.current.style.transition",
-            el.current.style.transition
-          );
-          el.current.style.transform = `translateZ(min(-${
-            4000 - innerWidth * 2
-          }px, -1200px))`;
-          // el.current.style.height = `${innerWidth / 50}px`;
-          console.log(
-            "el.current.style.transition after",
-            el.current.style.transition
-          );
-        }
-      });
+      // window.addEventListener("resize", () => {
+      //   if (el.current) {
+      //     el.current.style.transform = `translateZ(min(-${
+      //       4000 - innerWidth * 2
+      //     }px, -1200px))`;
+      //   }
+      // });
 
       // Calculate mouse shift
       // const onMouseMove = (e: MouseEvent) => {
@@ -309,7 +305,8 @@ const PhotoSphere = (props: { imageData: string[] }) => {
             key={index}
             style={{ backgroundImage: `url(${it})` }}
             className="photosphere-item"
-          ></div>
+            draggable={false}
+          />
         ))}
       </div>
     </div>

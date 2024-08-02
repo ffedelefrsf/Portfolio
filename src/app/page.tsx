@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[100%]">
+      <div className="w-[50%]">
         <PhotoSphere imageData={allTechIconsPaths} />
       </div>
       <div className="mt-[100px] text-white">
