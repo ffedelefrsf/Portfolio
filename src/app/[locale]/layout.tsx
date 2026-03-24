@@ -3,20 +3,19 @@ import { NextIntlClientProvider } from "next-intl";
 
 import { Navbar } from "@/cross-site/ui/Navbar";
 import { MobileSettingsButton } from "@/cross-site/ui/Navbar/Mobile/MobileSettingsButton";
-import { SupportedLanguage } from "@/i18n/types";
-import { SUPPORTED_LANGUAGES } from "@/i18n/utils";
+import { isSupportedLanguage } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
 
 export default async function LocaleLayout({
   params,
   children,
 }: Readonly<{
-  params: Promise<{ locale: SupportedLanguage }>;
+  params: Promise<{ locale: string }>;
   children: React.ReactNode;
 }>) {
   const { locale } = await params;
 
-  if (!SUPPORTED_LANGUAGES.includes(locale)) {
+  if (!isSupportedLanguage(locale)) {
     notFound();
   }
 
