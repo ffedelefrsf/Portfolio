@@ -9,7 +9,6 @@ import { TRANSLATION_NAME as NAVBAR } from "../cross-site/ui/Navbar/translation/
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = (await requestLocale) ?? "en";
-  console.log("root locale", locale);
 
   const [navbar, home, skills, experience, about, contact] = await Promise.all([
     import(`../cross-site/ui/Navbar/translation/${locale}.json`),
