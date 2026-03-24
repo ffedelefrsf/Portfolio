@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "badge": "Ingeniero de Software · Full Stack",
+    "greeting": "Hola, soy",
+    "name": "Fausto Fedele",
+    "title": "Construyo para la web, de principio a fin.",
+    "description": "Diseño y construyo aplicaciones web escalables — desde interfaces pulidas hasta backends robustos. Apasionado por el código limpio, la experiencia de desarrollo y el lanzamiento de productos que importan.",
+    "cta": {
+      "primary": "Ver Experiencia",
+      "secondary": "Contactar"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "badge": "Software Engineer · Full Stack",
+    "greeting": "Hi, I'm",
+    "name": "Fausto Fedele",
+    "title": "I build for the web, front to back.",
+    "description": "I design and build scalable web applications — from polished interfaces to robust backends. Passionate about clean code, great developer experience, and shipping products that matter.",
+    "cta": {
+      "primary": "View Experience",
+      "secondary": "Get in Touch"
+    }
+  }
+}

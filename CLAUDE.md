@@ -323,6 +323,15 @@ Favor:
 - visual clarity
 - clean card and section composition
 
+#### Shadow direction
+
+Shadows must adapt to the current theme:
+
+- **Light mode**: use black shadows (`oklch(0 0 0 / opacity)`)
+- **Dark mode**: use white shadows (`oklch(1 0 0 / opacity)`)
+
+Shadow tokens (`--shadow-xs` through `--shadow-xl`) already handle this automatically via CSS variables. Always use the existing shadow tokens — never hardcode shadow colors.
+
 ---
 
 ### 13. Content structure for portfolio pages
