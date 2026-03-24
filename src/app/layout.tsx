@@ -1,11 +1,10 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import { Navbar } from "../cross-site/ui/Navbar";
-import "./globals.css";
-import { ServerProviders } from "../cross-site/providers/ServerProviders";
-import { ClientProviders } from "../cross-site/providers/ClientProviders";
+
+import { ClientProviders } from "@/cross-site/providers/ClientProviders";
 import { cn } from "@/lib/utils";
-import { MobileSettingsButton } from "@/cross-site/ui/Navbar/Mobile/MobileSettingsButton";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -42,16 +41,10 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
-      <body className="flex flex-col justify-center items-center">
-        <ServerProviders>
-          <ClientProviders>
-            <Navbar />
-            <MobileSettingsButton />
-            <main className="mb-(--mobile-nav-height) sm:mb-[unset] p-3 max-w-7xl">
-              {children}
-            </main>
-          </ClientProviders>
-        </ServerProviders>
+      <body
+        className={cn("flex", "flex-col", "justify-center", "items-center")}
+      >
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

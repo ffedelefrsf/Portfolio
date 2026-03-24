@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { cn } from "@/lib/utils";
+
 export function NavLink({ href, label }: { href: string; label: string }) {
   const pathname = usePathname();
   const isActive = pathname === href;
@@ -11,11 +13,24 @@ export function NavLink({ href, label }: { href: string; label: string }) {
       key={href}
       href={href}
       aria-current={isActive ? "page" : undefined}
-      className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-        isActive
-          ? "text-primary-700 dark:text-primary-400 bg-primary-100 dark:bg-primary-950"
-          : "text-foreground hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-alt"
-      }`}
+      className={cn(
+        "px-3",
+        "py-1.5",
+        "rounded-lg",
+        "text-sm",
+        "font-medium",
+        "transition-colors",
+        {
+          "text-primary-700": isActive,
+          "dark:text-primary-400": isActive,
+          "bg-primary-100": isActive,
+          "dark:bg-primary-950": isActive,
+          "text-foreground": !isActive,
+          "hover:text-primary-600": !isActive,
+          "dark:hover:text-primary-400": !isActive,
+          "hover:bg-surface-alt": !isActive,
+        },
+      )}
     >
       {label}
     </Link>

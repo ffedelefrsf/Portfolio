@@ -1,13 +1,16 @@
 "use client";
 
+import { BriefcaseBusiness, House, LibraryBig, Mail, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
-import { BriefcaseBusiness, House, LibraryBig, Mail, User } from "lucide-react";
+import { useLocale } from "next-intl";
 import { ElementType } from "react";
+
+import { cn } from "@/lib/utils";
+
 import { Link as LinkType } from "../types";
 
-const PAGE_ICON_MAP: Record<LinkType["href"], ElementType> = {
+const PAGE_ICON_MAP: Record<string, ElementType> = {
   "/": House,
   "/skills": LibraryBig,
   "/experience": BriefcaseBusiness,
@@ -17,17 +20,39 @@ const PAGE_ICON_MAP: Record<LinkType["href"], ElementType> = {
 
 export function Mobile({ links }: { links: LinkType[] }) {
   const pathname = usePathname();
+  const locale = useLocale();
 
   return (
-    <div className="fixed sm:hidden inset-x-0 bottom-0 z-50 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/80 h-(--mobile-nav-height)">
-      <nav className="border-t">
-        <div className="mx-auto flex max-w-md items-stretch justify-between px-2 py-2">
+    <div
+      className={cn(
+        "fixed",
+        "sm:hidden",
+        "inset-x-0",
+        "bottom-0",
+        "z-50",
+        "bg-background/95",
+        "backdrop-blur",
+        "supports-backdrop-filter:bg-background/80",
+        "h-(--mobile-nav-height)",
+      )}
+    >
+      <nav className={cn("border-t")}>
+        <div
+          className={cn(
+            "mx-auto",
+            "flex",
+            "max-w-md",
+            "items-stretch",
+            "justify-between",
+            "px-2",
+            "py-2",
+          )}
+        >
           {links.map(({ href, label }) => {
-            const Icon = PAGE_ICON_MAP[href];
-            const isActive =
-              href === "/"
-                ? pathname === "/"
-                : pathname === href || pathname.startsWith(`${href}/`);
+            const cleanedHref =
+              href === `/${locale}` ? "/" : href.replace(`/${locale}`, "");
+            const Icon = PAGE_ICON_MAP[cleanedHref];
+            const isActive = pathname === href;
 
             return (
               <Link
@@ -35,21 +60,37 @@ export function Mobile({ links }: { links: LinkType[] }) {
                 href={href}
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  `flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-xl px-2 py-2 text-xs
-                 transition-colors ${
-                   isActive
-                     ? "text-primary-700 dark:text-primary-400 bg-primary-100 dark:bg-primary-950"
-                     : "text-foreground hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-alt"
-                 }`,
+                  "flex",
+                  "min-w-0",
+                  "flex-1",
+                  "flex-col",
+                  "items-center",
+                  "justify-center",
+                  "gap-1",
+                  "rounded-xl",
+                  "px-2",
+                  "py-2",
+                  "text-xs",
+                  "transition-colors",
+                  {
+                    "text-primary-700": isActive,
+                    "dark:text-primary-400": isActive,
+                    "bg-primary-100": isActive,
+                    "dark:bg-primary-950": isActive,
+                    "text-foreground": !isActive,
+                    "hover:text-primary-600": !isActive,
+                    "dark:hover:text-primary-400": !isActive,
+                    "hover:bg-surface-alt": !isActive,
+                  },
                 )}
               >
                 <Icon
-                  className="h-5 w-5 shrink-0"
+                  className={cn("h-5", "w-5", "shrink-0")}
                   {...(isActive && {
                     style: { stroke: "var(--color-primary-400)" },
                   })}
                 />
-                <span className="truncate text-[11px] leading-none">
+                <span className={cn("truncate", "text-[11px]", "leading-none")}>
                   {label}
                 </span>
               </Link>

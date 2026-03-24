@@ -1,3 +1,7 @@
+import { setRequestLocale } from "next-intl/server";
+
+import { Params } from "@/app/[locale]/types";
+
 export const SUPPORTED_LANGUAGES = ["en", "es"] as const;
 
 export const LANGUAGE_NAMES_AND_FLAGS_MAP: Record<
@@ -15,3 +19,8 @@ export const SELECT_ITEMS = Object.entries(LANGUAGE_NAMES_AND_FLAGS_MAP).map(
     label: flag,
   }),
 );
+
+export async function initializeI18N(params: Params["params"]) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+}

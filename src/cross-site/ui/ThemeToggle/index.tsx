@@ -1,12 +1,14 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
+import { Button } from "@/components/ui/button";
+
+import { TRANSLATION_NAME } from "../Navbar/translation/config";
 import { MoonIcon } from "./icons/MoonIcon";
 import { SunIcon } from "./icons/SunIcon";
-import { TRANSLATION_NAME } from "../Navbar/translation/config";
-import { Button } from "@/components/ui/button";
 
 export function ThemeToggle({ className }: { className: string }) {
   const [mounted, setMounted] = useState(false);
