@@ -1,3 +1,5 @@
+"use client";
+
 import { useTheme } from "next-themes";
 import { MoonIcon } from "./icons/MoonIcon";
 import { SunIcon } from "./icons/SunIcon";
@@ -5,7 +7,6 @@ import { SunIcon } from "./icons/SunIcon";
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
-  // Before hydration resolvedTheme is undefined — fall back to dark
   const isDark = resolvedTheme !== "light";
 
   return (

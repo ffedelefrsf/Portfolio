@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { Navbar } from "../cross-site/ui/Navbar";
 import "./globals.css";
 import { ServerProviders } from "../cross-site/providers/ServerProviders";
 import { ClientProviders } from "../cross-site/providers/ClientProviders";
 import { cn } from "@/lib/utils";
+import { TopSettings } from "@/cross-site/ui/Navbar/Mobile/TopSettings";
 
-const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,14 +32,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", figtree.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        geistSans.variable,
+        geistMono.variable,
+        "font-sans",
+        inter.variable,
+      )}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex flex-col justify-center items-center">
         <ServerProviders>
           <ClientProviders>
             <Navbar />
-            {children}
+            <TopSettings />
+            <main className="mb-(--mobile-nav-height) sm:mb-[unset] p-3 max-w-7xl">
+              {children}
+            </main>
           </ClientProviders>
         </ServerProviders>
       </body>

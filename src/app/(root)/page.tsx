@@ -6,9 +6,9 @@ export default async function Home() {
   const t = await getTranslations(TRANSLATION_NAME);
 
   return (
-    <main className="flex flex-col">
+    <section className="flex flex-col">
       {/* Hero */}
-      <section className="flex flex-1 flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 sm:px-6 lg:px-8 py-24">
+      <div className="flex flex-1 flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 sm:px-6 lg:px-8 py-24">
         <div className="mx-auto max-w-3xl text-center">
           {/* Role badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-primary-200 dark:border-primary-800 bg-primary-50 dark:bg-primary-950/60 px-4 py-1.5 text-sm font-medium text-primary-700 dark:text-primary-400 mb-10">
@@ -50,7 +50,7 @@ export default async function Home() {
             </Link>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
