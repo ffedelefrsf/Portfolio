@@ -10,12 +10,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { SELECT_ITEMS } from "@/i18n/utils";
 import { useLocale } from "next-intl";
-
-const items = [
-  { value: "en", label: "🇬🇧", lang: "English" },
-  { value: "es", label: "🇪🇸", lang: "Español" },
-] as const;
 
 export function LanguageSwitcher() {
   const locale = useLocale();
@@ -27,20 +23,20 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <Select items={items} onValueChange={handleChange} value={locale}>
+    <Select items={SELECT_ITEMS} onValueChange={handleChange} value={locale}>
       <SelectTrigger className="w-full max-w-15 cursor-pointer dark:bg-transparent">
         <SelectValue />
       </SelectTrigger>
       <SelectContent className="min-w-30 max-w-30">
         <SelectGroup>
           <SelectLabel>Language</SelectLabel>
-          {items.map((item) => (
+          {SELECT_ITEMS.map((item) => (
             <SelectItem
               key={item.value}
               value={item.value}
               className="cursor-pointer"
             >
-              {item.label} {item.lang}
+              {item.label} {item.name}
             </SelectItem>
           ))}
         </SelectGroup>

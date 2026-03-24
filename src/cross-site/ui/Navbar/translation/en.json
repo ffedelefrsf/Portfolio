@@ -5,5 +5,10 @@
   "about": "About me",
   "contact": "Contact",
   "openMenu": "Open menu",
-  "closeMenu": "Close menu"
+  "closeMenu": "Close menu",
+  "mobileSettings": {
+    "switchLanguage": "Switch language to:",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  }
 }

@@ -5,7 +5,7 @@ import "./globals.css";
 import { ServerProviders } from "../cross-site/providers/ServerProviders";
 import { ClientProviders } from "../cross-site/providers/ClientProviders";
 import { cn } from "@/lib/utils";
-import { TopSettings } from "@/cross-site/ui/Navbar/Mobile/TopSettings";
+import { MobileSettingsButton } from "@/cross-site/ui/Navbar/Mobile/MobileSettingsButton";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -46,7 +46,7 @@ export default function RootLayout({
         <ServerProviders>
           <ClientProviders>
             <Navbar />
-            <TopSettings />
+            <MobileSettingsButton />
             <main className="mb-(--mobile-nav-height) sm:mb-[unset] p-3 max-w-7xl">
               {children}
             </main>
