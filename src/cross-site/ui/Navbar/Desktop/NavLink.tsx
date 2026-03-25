@@ -12,6 +12,7 @@ export function NavLink({ href, label }: { href: string; label: string }) {
     <Link
       key={href}
       href={href}
+      prefetch
       aria-current={isActive ? "page" : undefined}
       className={cn(
         "px-3",
