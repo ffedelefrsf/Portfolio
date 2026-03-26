@@ -40,6 +40,7 @@ import { NextJS } from "./icons/NextJS";
 import { OpenAI } from "./icons/OpenAI";
 import { PHP } from "./icons/PHP";
 import { Playwright } from "./icons/Playwright";
+import { Python } from "./icons/Python";
 import { React } from "./icons/React";
 import { ReactTestingLibrary } from "./icons/ReactTestingLibrary";
 import { Redis } from "./icons/Redis";
@@ -308,5 +309,9 @@ export const technologies: Record<
   cursor: {
     name: "Cursor",
     component: Cursor,
+  },
+  python: {
+    name: "Python",
+    component: Python,
   },
 };

@@ -28,6 +28,7 @@ export default async function LocaleLayout({
           "mb-(--mobile-nav-height)",
           "sm:mb-[unset]",
           "p-3",
+          "w-full",
           "max-w-7xl",
         )}
       >

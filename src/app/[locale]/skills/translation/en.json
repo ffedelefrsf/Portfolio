@@ -1,3 +1,49 @@
 {
-  "title": "Skills"
+  "title": "Skills",
+  "subtitle": "Technologies and tools I've used across 7+ years of professional development",
+  "categories": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai": "Artificial Intelligence",
+    "testing": "Testing",
+    "cloudDevops": "Cloud & DevOps",
+    "languages": "Languages",
+    "databases": "Databases",
+    "auth": "Authentication",
+    "observability": "Observability & Analytics",
+    "design": "Design",
+    "management": "Management",
+    "methodologies": "Methodologies"
+  },
+  "proficiency": {
+    "title": "Proficiency",
+    "advanced": {
+      "name": "Advanced",
+      "description": "Can jump right in without difficulties nor causing tech debt"
+    },
+    "solid": {
+      "name": "Solid",
+      "description": "Guaranteed autonomy, but some catch up first would be appreciated"
+    },
+    "basic": {
+      "name": "Basic",
+      "description": "Will make it work, but most likely cause some tech debt in the process"
+    }
+  },
+  "recency": {
+    "title": "Recency",
+    "fresh": {
+      "name": "Fresh",
+      "description": "Recent/Present activity"
+    },
+    "rusty": {
+      "name": "Rusty",
+      "description": "Has passed more than a year since last use"
+    },
+    "blurry": {
+      "name": "Blurry",
+      "description": "Hard to tell when it was used for the last time"
+    }
+  },
+  "clearFilters": "Clear filters"
 }
