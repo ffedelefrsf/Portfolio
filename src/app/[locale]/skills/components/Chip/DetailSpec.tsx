@@ -7,10 +7,10 @@ const VALUE_TEXT_COLOR_CLASS_MAP: Record<
 > = {
   advanced: cn("text-primary-700"),
   solid: cn("text-indigo-300"),
-  basic: cn("text-neutral-200", "dark:text-neutral-600"),
+  basic: cn("text-neutral-400", "dark:text-neutral-500"),
   fresh: cn("text-primary-500"),
   rusty: cn("text-amber-800"),
-  blurry: cn("text-neutral-100", "dark:text-neutral-800", "opacity-40"),
+  blurry: cn("text-neutral-600", "dark:text-neutral-300", "opacity-40"),
 };
 
 export function DetailSpec({
