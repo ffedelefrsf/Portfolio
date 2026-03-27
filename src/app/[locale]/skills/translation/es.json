@@ -1,15 +1,15 @@
 {
   "title": "Skills",
-  "subtitle": "Tecnologías y herramientas utilizadas a lo largo de más de 7 años de desarrollo profesional",
+  "subtitle": "Tecnologías y herramientas utilizadas a lo largo de más de 7 años de desarrollo profesional.",
   "categories": {
     "frontend": "Frontend",
     "backend": "Backend",
-    "ai": "Inteligencia Artificial",
+    "ai": "AI y herramientas",
     "testing": "Pruebas",
     "cloudDevops": "Cloud & DevOps",
     "languages": "Lenguajes",
     "databases": "Bases de datos",
-    "observability": "Observabilidad y datos",
+    "observability": "Monitoreo y datos",
     "auth": "Autenticación",
     "design": "Diseño",
     "management": "Management",
@@ -19,31 +19,34 @@
     "title": "Nivel",
     "advanced": {
       "name": "Avanzado",
-      "description": "Puede ser utilizado ahora mismo sin dificultades ni causando deuda técnica"
+      "description": "Puede ser utilizado ahora mismo sin dificultades ni causando deuda técnica."
     },
     "solid": {
       "name": "Sólido",
-      "description": "Autonomía garantizada, pero un refresco de conocimientos no vendría mal"
+      "description": "Autonomía garantizada, pero un refresco de conocimientos no vendría mal."
     },
     "basic": {
       "name": "Básico",
-      "description": "Lo haré funcionar, pero seguramente cause deuda técnica en el proceso"
+      "description": "Lo haré funcionar, pero seguramente cause deuda técnica en el proceso."
     }
   },
   "recency": {
     "title": "Uso reciente",
     "fresh": {
       "name": "Fresco",
-      "description": "Actividad reciente/actual"
+      "description": "Actividad reciente/actual."
     },
     "rusty": {
       "name": "Intermedio",
-      "description": "Ha pasado más de un año desde la última vez que se utilizó"
+      "description": "Ha pasado más de un año desde la última vez que se utilizó."
     },
     "blurry": {
       "name": "Lejano",
-      "description": "Es difícil recordar la última vez que fue utilizado"
+      "description": "Es difícil recordar la última vez que fue utilizado."
     }
   },
-  "clearFilters": "Limpiar filtros"
+  "filter": {
+    "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos chequea esta opción. Más información sobre cada skill puede obtenerse presionándolos.",
+    "mostRelevant": "Mostrar sólo los más relevantes"
+  }
 }

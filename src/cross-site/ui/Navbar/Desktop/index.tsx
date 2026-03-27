@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-
 import { LangAndTheme } from "../LangAndTheme";
 import { Link } from "../types";
 import { Home } from "./Home";

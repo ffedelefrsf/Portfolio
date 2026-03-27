@@ -10,7 +10,7 @@ export const SKILL_DETAILS: Record<string, SkillDetail> = {
   jquery: { proficiency: "basic", recency: "blurry" },
   redux: { proficiency: "solid", recency: "rusty" },
   storybook: { proficiency: "basic", recency: "rusty" },
-  wordpress: { proficiency: "solid", recency: "blurry" },
+  wordpress: { proficiency: "solid", recency: "rusty" },
 
   // Backend
   expressjs: { proficiency: "solid", recency: "rusty" },
@@ -40,7 +40,7 @@ export const SKILL_DETAILS: Record<string, SkillDetail> = {
   firebase: { proficiency: "solid", recency: "rusty" },
   docker: { proficiency: "solid", recency: "fresh" },
   github: { proficiency: "advanced", recency: "fresh" },
-  gitlab: { proficiency: "solid", recency: "rusty" },
+  gitlab: { proficiency: "basic", recency: "rusty" },
   jenkins: { proficiency: "basic", recency: "rusty" },
   redis: { proficiency: "basic", recency: "rusty" },
 
@@ -92,8 +92,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "reactnative",
       "tailwind",
       "redux",
-      "storybook",
       "wordpress",
+      "storybook",
       "angular",
       "jquery",
     ],
@@ -124,11 +124,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "vercel",
       "aws",
       "cloudflare",
-      "azure",
       "firebase",
       "docker",
       "github",
       "gitlab",
+      "azure",
       "jenkins",
       "redis",
     ],
@@ -139,7 +139,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     id: "databases",
-    skills: ["mysql", "mssql", "ibm", "snowflake"],
+    skills: ["mysql", "snowflake", "mssql", "ibm"],
   },
   {
     id: "auth",
@@ -159,6 +159,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     id: "methodologies",
-    skills: ["SCRUM", "Kanban", "RUP"],
+    skills: ["SCRUM", "RUP", "Kanban"],
   },
 ];

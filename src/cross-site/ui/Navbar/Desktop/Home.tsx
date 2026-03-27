@@ -3,9 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-
 import { cn } from "@/lib/utils";
-
 import { TRANSLATION_NAME } from "../translation/config";
 import { HomeIcon } from "./HomeIcon";
 

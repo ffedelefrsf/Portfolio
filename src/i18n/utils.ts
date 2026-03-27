@@ -1,7 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-
 import { Params } from "@/app/[locale]/types";
-
 import { SupportedLanguage } from "./types";
 
 export const SUPPORTED_LANGUAGES = ["en", "es"] as const;

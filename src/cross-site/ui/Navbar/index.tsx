@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
-
 import { SupportedLanguage } from "@/i18n/types";
 import { cn } from "@/lib/utils";
-
 import { Desktop } from "./Desktop";
 import { Mobile } from "./Mobile";
 import { TRANSLATION_NAME } from "./translation/config";

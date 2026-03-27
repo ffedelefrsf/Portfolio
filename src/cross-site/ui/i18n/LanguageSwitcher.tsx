@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
-
 import {
   Select,
   SelectContent,
@@ -14,7 +13,6 @@ import {
 } from "@/components/ui/select";
 import { SELECT_ITEMS } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
-
 import { setLocale } from "../../../i18n/actions";
 
 export function LanguageSwitcher() {

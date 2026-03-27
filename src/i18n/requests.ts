@@ -1,5 +1,4 @@
 import { getRequestConfig } from "next-intl/server";
-
 import { TRANSLATION_NAME as HOME } from "../app/[locale]/(root)/translation/config";
 import { TRANSLATION_NAME as ABOUT } from "../app/[locale]/about/translation/config";
 import { TRANSLATION_NAME as CONTACT } from "../app/[locale]/contact/translation/config";

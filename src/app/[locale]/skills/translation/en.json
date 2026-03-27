@@ -1,10 +1,10 @@
 {
   "title": "Skills",
-  "subtitle": "Technologies and tools I've used across 7+ years of professional development",
+  "subtitle": "Technologies and tools I've used across 7+ years of professional development.",
   "categories": {
     "frontend": "Frontend",
     "backend": "Backend",
-    "ai": "Artificial Intelligence",
+    "ai": "AI & Tools",
     "testing": "Testing",
     "cloudDevops": "Cloud & DevOps",
     "languages": "Languages",
@@ -19,31 +19,34 @@
     "title": "Proficiency",
     "advanced": {
       "name": "Advanced",
-      "description": "Can jump right in without difficulties nor causing tech debt"
+      "description": "Can jump right in without difficulties nor causing tech debt."
     },
     "solid": {
       "name": "Solid",
-      "description": "Guaranteed autonomy, but some catch up first would be appreciated"
+      "description": "Guaranteed autonomy, but some catch up first would be appreciated."
     },
     "basic": {
       "name": "Basic",
-      "description": "Will make it work, but most likely cause some tech debt in the process"
+      "description": "Will make it work, but most likely cause some tech debt in the process."
     }
   },
   "recency": {
     "title": "Recency",
     "fresh": {
       "name": "Fresh",
-      "description": "Recent/Present activity"
+      "description": "Recent/Present activity."
     },
     "rusty": {
       "name": "Rusty",
-      "description": "Has passed more than a year since last use"
+      "description": "Has passed more than a year since last use."
     },
     "blurry": {
       "name": "Blurry",
-      "description": "Hard to tell when it was used for the last time"
+      "description": "Hard to tell when it was used for the last time."
     }
   },
-  "clearFilters": "Clear filters"
+  "filter": {
+    "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed select this checkbox.\nMore information about each skill can be read clicking on them.",
+    "mostRelevant": "Show most relevant only"
+  }
 }

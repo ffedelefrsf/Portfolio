@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
-
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
-
 import { Params } from "../types";
 import { TRANSLATION_NAME } from "./translation/config";
 

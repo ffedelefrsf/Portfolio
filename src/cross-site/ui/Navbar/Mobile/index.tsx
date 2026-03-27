@@ -5,9 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { ElementType } from "react";
-
 import { cn } from "@/lib/utils";
-
 import { Link as LinkType } from "../types";
 
 const PAGE_ICON_MAP: Record<string, ElementType> = {

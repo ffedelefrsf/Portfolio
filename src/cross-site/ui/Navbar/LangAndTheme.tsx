@@ -1,6 +1,5 @@
 import { LanguageSwitcher } from "@/cross-site/ui/i18n/LanguageSwitcher";
 import { cn } from "@/lib/utils";
-
 import { ThemeToggle } from "../ThemeToggle";
 
 export function LangAndTheme() {

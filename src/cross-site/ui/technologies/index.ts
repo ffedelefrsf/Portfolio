@@ -1,5 +1,4 @@
 import type { ElementType } from "react";
-
 import { Android } from "./icons/Android";
 import { Angular } from "./icons/Angular";
 import { AntDesign } from "./icons/AntDesign";
