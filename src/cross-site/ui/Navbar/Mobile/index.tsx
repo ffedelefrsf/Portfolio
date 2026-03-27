@@ -32,6 +32,7 @@ export function Mobile({ links }: { links: LinkType[] }) {
         "backdrop-blur",
         "supports-backdrop-filter:bg-background/80",
         "h-(--mobile-nav-height)",
+        "pb-[env(safe-area-inset-bottom,0px)]",
       )}
     >
       <nav className={cn("border-t")}>

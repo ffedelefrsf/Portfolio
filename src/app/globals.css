@@ -156,7 +156,7 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
 
-  --mobile-nav-height: 70px;
+  --mobile-nav-height: calc(70px + env(safe-area-inset-bottom, 0px));
 }
 
 :root.dark {
