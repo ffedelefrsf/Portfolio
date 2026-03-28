@@ -1,3 +1,56 @@
 {
-  "title": "Experience"
+  "title": "Experience",
+  "subtitle": "6+ years shipping products across fintech, health, sports, and more",
+  "present": "Present",
+  "workTypes": {
+    "remote": "Remote",
+    "office": "On-site"
+  },
+  "projects": "Projects",
+  "entries": {
+    "solvd": {
+      "role": "Senior Software Engineer",
+      "client": "Consulted for NerdWallet · Main team website",
+      "highlights": [
+        "Led management, implementation, and delivery of new features for NerdWallet's main website",
+        "Broke down product requirements into technical tasks, estimated timelines, and coordinated releases",
+        "Mentored new team members, promoted inclusive collaboration, and reported performance concerns",
+        "Optimized frontend performance for Core Web Vitals and SEO — reached top 3 on all key keyword rankings",
+        "Mastered observability and monitoring with DataDog to identify and resolve issues proactively"
+      ]
+    },
+    "exoMindset": {
+      "role": "Senior Software Engineer",
+      "description": "Led product design, development, and delivery across multiple concurrent client projects as primary engineer and team lead.",
+      "projects": {
+        "meetknit": "Secure mobile platform for storing and sharing information. Led a team of four and managed iOS/Android releases.",
+        "sigloXxi": "Project and architecture setup, HR recruiting, development estimation, and release support.",
+        "scoutSmartRecruit": "Full-cycle development of a mobile app for high school football players to publish profiles and secure scholarships.",
+        "scoutSmart": "Maintenance of a coaching app for reviewing player profiles and managing recruitment decisions.",
+        "lapMarketplace": "Product managing and development of a marketplace to sell Chilean-manufactured products on Amazon, Walmart, and eBay.",
+        "vialCard": "Full product lifecycle for a driver license creation and management system.",
+        "mySherlock": "Maintenance and development of a product matching and price comparison platform."
+      }
+    },
+    "i2tSenior": {
+      "role": "Full Stack Developer",
+      "highlights": [
+        "Built WordPress and Angular e-commerce websites for regional businesses",
+        "Promoted to Senior Backend Engineer and tech lead at SanCor Salud, Argentina's leading healthcare insurer",
+        "Led one of the company's most critical internal projects for healthcare professionals"
+      ]
+    },
+    "cooperativa": {
+      "role": "Full Stack Mobile Developer",
+      "highlights": [
+        "Built an Android app for agricultural producers to track transactions, account balances, and statistical reports"
+      ]
+    },
+    "i2tIntern": {
+      "role": "Internship — App Building Department",
+      "highlights": [
+        "R&D across PHP, Node.js, MySQL, VisualBasic, JasperReports, and SVN"
+      ]
+    }
+  }
 }

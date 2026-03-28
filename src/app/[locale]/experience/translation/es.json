@@ -1,3 +1,56 @@
 {
-  "title": "Experiencia"
+  "title": "Experiencia",
+  "subtitle": "Más de 6 años creando productos en fintech, salud, deportes y más",
+  "present": "Presente",
+  "workTypes": {
+    "remote": "Remoto",
+    "office": "Presencial"
+  },
+  "projects": "Proyectos",
+  "entries": {
+    "solvd": {
+      "role": "Ingeniero de Software Senior",
+      "client": "Consultor en NerdWallet · Sitio web principal",
+      "highlights": [
+        "Lideré la gestión, implementación y entrega de nuevas funcionalidades para el sitio principal de NerdWallet",
+        "Descompuse requerimientos en tareas técnicas, estimé tiempos y coordiné releases",
+        "Mentoricé nuevos integrantes del equipo y promoví una colaboración inclusiva",
+        "Optimicé el rendimiento frontend para Core Web Vitals y SEO — alcancé el top 3 en keywords relevantes",
+        "Dominé la observabilidad y monitoreo con DataDog para identificar y resolver problemas de forma proactiva"
+      ]
+    },
+    "exoMindset": {
+      "role": "Ingeniero de Software Senior",
+      "description": "Lideré el diseño, desarrollo y entrega de múltiples proyectos simultáneos como ingeniero principal y tech lead.",
+      "projects": {
+        "meetknit": "Plataforma móvil segura para almacenar y compartir información. Lideré un equipo de cuatro personas y gestioné los releases de iOS/Android.",
+        "sigloXxi": "Setup del proyecto y arquitectura, reclutamiento de RRHH, estimación de desarrollo y soporte al release.",
+        "scoutSmartRecruit": "Desarrollo completo de una app móvil para jugadores de fútbol americano universitario para publicar perfiles y conseguir becas.",
+        "scoutSmart": "Mantenimiento de una app de coaching para revisar perfiles de jugadores y gestionar decisiones de reclutamiento.",
+        "lapMarketplace": "Product managing y desarrollo de un marketplace para vender productos fabricados en Chile en Amazon, Walmart y eBay.",
+        "vialCard": "Ciclo completo de producto para un sistema de creación y gestión de licencias de conducir.",
+        "mySherlock": "Mantenimiento y desarrollo de una plataforma de comparación de precios y matching de productos."
+      }
+    },
+    "i2tSenior": {
+      "role": "Desarrollador Full Stack",
+      "highlights": [
+        "Desarrollé sitios e-commerce con WordPress y Angular para empresas regionales",
+        "Promovido a Ingeniero Backend Senior y tech lead en SanCor Salud, la principal aseguradora de salud de Argentina",
+        "Lideré uno de los proyectos internos más críticos de la empresa para profesionales de la salud"
+      ]
+    },
+    "cooperativa": {
+      "role": "Desarrollador Full Stack Mobile",
+      "highlights": [
+        "Desarrollé una app Android para productores agropecuarios para seguir transacciones, saldos y reportes estadísticos"
+      ]
+    },
+    "i2tIntern": {
+      "role": "Pasantía — Departamento de Desarrollo de Apps",
+      "highlights": [
+        "Tareas de I+D en PHP, Node.js, MySQL, VisualBasic, JasperReports y SVN"
+      ]
+    }
+  }
 }
