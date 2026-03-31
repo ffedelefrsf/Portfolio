@@ -3,19 +3,15 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { SKILL_CATEGORIES } from "../data";
 import { TRANSLATION_NAME } from "../translation/config";
-import { Checkbox } from "./Checkbox";
 import { Chip } from "./Chip";
-import { Popover } from "./Popover";
+import { Filter } from "./Filter";
 
 export async function List() {
   const t = await getTranslations(TRANSLATION_NAME);
 
   return (
     <div className={cn("max-w-4xl", "group")}>
-      <div className={cn("flex", "items-center", "gap-2", "mb-8")}>
-        <Checkbox />
-        <Popover />
-      </div>
+      <Filter />
       <div>
         {SKILL_CATEGORIES.map(({ id, skills }, index) => (
           <div

@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { cn } from "@/lib/utils";
-import { TRANSLATION_NAME } from "../translation/config";
+import { TRANSLATION_NAME } from "../../translation/config";
 
 export async function Checkbox() {
   const t = await getTranslations(TRANSLATION_NAME);

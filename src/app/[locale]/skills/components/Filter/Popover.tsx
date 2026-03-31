@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { TRANSLATION_NAME } from "../translation/config";
+import { TRANSLATION_NAME } from "../../translation/config";
 
 export async function Popover() {
   const t = await getTranslations(TRANSLATION_NAME);
