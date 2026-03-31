@@ -1,49 +1,54 @@
 {
   "title": "Experiencia",
-  "subtitle": "Más de 6 años creando productos en fintech, salud, deportes y más",
+  "subtitle": "Más de 7 años creando productos en fintech, salud, deportes y más",
   "present": "Presente",
   "workTypes": {
     "remote": "Remoto",
+    "hybrid": "Híbrido",
     "office": "Presencial"
   },
   "projects": "Proyectos",
+  "since": "Desde",
+  "visitWebsite": "Visitar sitio web",
+  "outOfBusiness": "Offline",
   "entries": {
     "solvd": {
       "role": "Ingeniero de Software Senior",
       "client": "Consultor en NerdWallet · Sitio web principal",
       "highlights": [
-        "Lideré la gestión, implementación y entrega de nuevas funcionalidades para el sitio principal de NerdWallet",
-        "Descompuse requerimientos en tareas técnicas, estimé tiempos y coordiné releases",
-        "Mentoricé nuevos integrantes del equipo y promoví una colaboración inclusiva",
-        "Optimicé el rendimiento frontend para Core Web Vitals y SEO — alcancé el top 3 en keywords relevantes",
-        "Dominé la observabilidad y monitoreo con DataDog para identificar y resolver problemas de forma proactiva"
+        "Gestión, implementación y entrega de nuevas funcionalidades para el sitio principal de NerdWallet",
+        "Descomposición de requerimientos de producto en tareas técnicas, estimación de tiempos y coordinación de releases",
+        "Mentoría a nuevos integrantes del equipo promoviendo una colaboración inclusiva",
+        "Optimización del rendimiento frontend (Core Web Vitals y SEO)",
+        "Dominio de observabilidad y monitoreo para identificar y resolver errores de forma proactiva"
       ]
     },
     "exoMindset": {
       "role": "Ingeniero de Software Senior",
       "description": "Lideré el diseño, desarrollo y entrega de múltiples proyectos simultáneos como ingeniero principal y tech lead.",
       "projects": {
-        "meetknit": "Plataforma móvil segura para almacenar y compartir información. Lideré un equipo de cuatro personas y gestioné los releases de iOS/Android.",
-        "sigloXxi": "Setup del proyecto y arquitectura, reclutamiento de RRHH, estimación de desarrollo y soporte al release.",
-        "scoutSmartRecruit": "Desarrollo completo de una app móvil para jugadores de fútbol americano universitario para publicar perfiles y conseguir becas.",
-        "scoutSmart": "Mantenimiento de una app de coaching para revisar perfiles de jugadores y gestionar decisiones de reclutamiento.",
+        "meetknit": "Ciclo completo de construcción de una plataforma web y móvil segura para almacenar y compartir información. Liderazgo de equipo y gestión de releases en iOS/Android.",
+        "sigloXxi": "Construcción de página integrada con el fin de listar carreras universitarias. Setup de proyecto y arquitectura, reclutamiento, estimación de desarrollo y soporte al release.",
+        "scoutSmartRecruit": "Desarrollo completo de una app móvil para jugadores de fútbol americano universitario donde pueden publicar perfiles y conseguir becas.",
+        "scoutSmart": "Mantenimiento (pequeños ajustes) de una app de coaches para revisar perfiles de jugadores y gestionar decisiones de reclutamiento.",
         "lapMarketplace": "Product managing y desarrollo de un marketplace para vender productos fabricados en Chile en Amazon, Walmart y eBay.",
         "vialCard": "Ciclo completo de producto para un sistema de creación y gestión de licencias de conducir.",
-        "mySherlock": "Mantenimiento y desarrollo de una plataforma de comparación de precios y matching de productos."
+        "mySherlock": "Mantenimiento y desarrollo de una plataforma para comparación de precios en diferentes supermercados."
       }
     },
     "i2tSenior": {
       "role": "Desarrollador Full Stack",
+      "client": "Consultor en SanCor Salud · Autorizaciones y prestadores",
       "highlights": [
-        "Desarrollé sitios e-commerce con WordPress y Angular para empresas regionales",
-        "Promovido a Ingeniero Backend Senior y tech lead en SanCor Salud, la principal aseguradora de salud de Argentina",
-        "Lideré uno de los proyectos internos más críticos de la empresa para profesionales de la salud"
+        "Desarrollo de sitios e-commerce con WordPress y Angular para empresas regionales",
+        "Ingeniero Backend Senior y tech lead en SanCor Salud",
+        "Liderazgo de un proyectos interno crítico para profesionales de la salud"
       ]
     },
     "cooperativa": {
       "role": "Desarrollador Full Stack Mobile",
       "highlights": [
-        "Desarrollé una app Android para productores agropecuarios para seguir transacciones, saldos y reportes estadísticos"
+        "Desarrollo de una app Android para productores agropecuarios para seguir transacciones, saldos y reportes estadísticos"
       ]
     },
     "i2tIntern": {

@@ -19,6 +19,7 @@ const eslintConfig = defineConfig([
       "simple-import-sort": simpleImportSort,
     },
     rules: {
+      "@typescript-eslint/no-explicit-any": "error",
       "simple-import-sort/imports": [
         "error",
         {

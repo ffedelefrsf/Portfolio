@@ -83,7 +83,9 @@ Always use strong TypeScript typing.
 
 Rules:
 
-- Avoid `any`
+- **Never use `any`** — not as a type annotation, not as a cast (`as any`), not with `eslint-disable` comments to suppress the error. There are no exceptions.
+- If a type is hard to express, use `unknown` and narrow it, or model the data properly. A type error is always preferable to `any`.
+- Never add `// eslint-disable` comments to suppress TypeScript or ESLint errors — fix the root cause instead.
 - Prefer explicit types for props, data models, and function returns
 - Use unions and utility types when appropriate
 - Keep types readable and maintainable
