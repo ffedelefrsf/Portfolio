@@ -1,3 +1,20 @@
 {
-  "title": "Contacto"
+  "title": "Contacto",
+  "subtitle": "Construyamos algo juntos.",
+  "description": "Tanto si tenés un proyecto en mente, una oportunidad para compartir, o simplemente querés saludar — mi bandeja de entrada siempre está abierta.",
+  "availability": "Abierto a oportunidades remotas",
+  "methods": {
+    "email": {
+      "label": "Email",
+      "action": "Enviar un email"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "action": "Conectar en LinkedIn"
+    },
+    "github": {
+      "label": "GitHub",
+      "action": "Ver mi trabajo en GitHub"
+    }
+  }
 }

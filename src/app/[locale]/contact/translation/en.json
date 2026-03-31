@@ -1,3 +1,20 @@
 {
-  "title": "Contact"
+  "title": "Contact",
+  "subtitle": "Let's build something together.",
+  "description": "Whether you have a project in mind, an opportunity to share, or just want to say hello — my inbox is always open.",
+  "availability": "Open to remote opportunities",
+  "methods": {
+    "email": {
+      "label": "Email",
+      "action": "Send an email"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "action": "Connect on LinkedIn"
+    },
+    "github": {
+      "label": "GitHub",
+      "action": "View my work on GitHub"
+    }
+  }
 }
