@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { SKILL_DETAILS } from "../../data";
 import { TRANSLATION_NAME } from "../../translation/config";
 import { DetailSpec } from "./DetailSpec";
+import { ExperienceInfo } from "./ExperienceInfo";
 
 type Props = {
   skill: string;
@@ -93,6 +94,7 @@ export async function Chip({ skill }: Props) {
           displayValue={t(`recency.${recency}.name`)}
           description={t(`recency.${recency}.description`)}
         />
+        <ExperienceInfo skill={skill} />
       </PopoverContent>
     </Popover>
   );

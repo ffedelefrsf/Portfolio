@@ -45,6 +45,10 @@
       "description": "Hard to tell when it was used for the last time."
     }
   },
+  "experience": {
+    "yearsLabel": "{years}+ years",
+    "usedAt": "Used at"
+  },
   "filter": {
     "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed select this checkbox.\nMore information about each skill can be read clicking on them.",
     "mostRelevant": "Show most relevant only"

@@ -45,6 +45,10 @@
       "description": "Es difícil recordar la última vez que fue utilizado."
     }
   },
+  "experience": {
+    "yearsLabel": "{years}+ años",
+    "usedAt": "Usado en"
+  },
   "filter": {
     "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos chequea esta opción. Más información sobre cada skill puede obtenerse presionándolos.",
     "mostRelevant": "Mostrar sólo los más relevantes"

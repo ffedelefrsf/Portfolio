@@ -6,7 +6,7 @@ const VALUE_TEXT_COLOR_CLASS_MAP: Record<
   string
 > = {
   advanced: cn("text-primary-700"),
-  solid: cn("text-indigo-300"),
+  solid: cn("text-indigo-400"),
   basic: cn("text-neutral-400", "dark:text-neutral-500"),
   fresh: cn("text-primary-500"),
   rusty: cn("text-amber-800"),

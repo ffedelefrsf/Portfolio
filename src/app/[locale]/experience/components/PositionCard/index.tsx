@@ -15,7 +15,16 @@ export async function PositionCard({ entry }: Props) {
   const isPresent = entry.period.end === null;
 
   return (
-    <div className={cn("relative", "pb-12", "pl-10", "last:pb-0")}>
+    <div
+      id={entry.id}
+      className={cn(
+        "relative",
+        "pb-12",
+        "pl-10",
+        "last:pb-0",
+        "sm:scroll-mt-25",
+      )}
+    >
       <div
         className={cn(
           "absolute",
