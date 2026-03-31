@@ -11,7 +11,14 @@ type Props = {
   openInNewTab: boolean;
 };
 
-export function ContactCard({ href, Icon, label, value, action, openInNewTab }: Props) {
+export function ContactCard({
+  href,
+  Icon,
+  label,
+  value,
+  action,
+  openInNewTab,
+}: Props) {
   return (
     <a
       href={href}
@@ -53,7 +60,9 @@ export function ContactCard({ href, Icon, label, value, action, openInNewTab }: 
         <Icon aria-hidden className={cn("size-5")} />
       </div>
       <div className={cn("flex-1", "min-w-0")}>
-        <p className={cn("text-sm", "font-semibold", "text-foreground")}>{label}</p>
+        <p className={cn("text-sm", "font-semibold", "text-foreground")}>
+          {label}
+        </p>
         <p className={cn("text-sm", "text-muted", "truncate")}>{value}</p>
       </div>
       <ExternalLink

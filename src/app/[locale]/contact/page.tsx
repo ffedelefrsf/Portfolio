@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: Params) {
           {t("description")}
         </p>
 
-        <div className={cn("flex", "flex-col", "gap-3", "max-w-100")}>
+        <div className={cn("grid", "gap-3", "sm:grid-cols-2")}>
           {CONTACT_METHODS.map((method) => (
             <ContactCard
               key={method.id}
