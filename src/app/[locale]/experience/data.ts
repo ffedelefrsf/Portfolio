@@ -45,12 +45,12 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
       "redis",
       "docker",
       "vercel",
+      "cloudflare",
       "figma",
       "datadog",
       "atlassian",
       "storybook",
       "wordpress",
-      "cloudflare",
     ],
   },
   {
