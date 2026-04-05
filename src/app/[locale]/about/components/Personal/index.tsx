@@ -19,7 +19,7 @@ export async function Personal() {
     myself: ME_COLLAGE_ITEMS,
     family: FAMILY_COLLAGE_ITEMS,
     pets: DOGS_COLLAGE_ITEMS,
-    workout: undefined,
+    disconnection: undefined,
     travel: TRAVEL_COLLAGE_ITEMS,
   };
 
@@ -29,7 +29,14 @@ export async function Personal() {
       <div className={cn("flex", "flex-col", "gap-5")}>
         {Object.entries(sections).map(([name, collageItems]) => (
           <Fragment key={name}>
-            <p className={cn("text-base", "text-muted", "leading-relaxed")}>
+            <p
+              className={cn(
+                "text-base",
+                "text-muted",
+                "leading-relaxed",
+                "whitespace-break-spaces",
+              )}
+            >
               {t(`personal.${name}`)}
             </p>
             {collageItems && (
