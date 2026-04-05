@@ -24,6 +24,7 @@ export type ExperienceEntry = {
   workType: "remote" | "hybrid" | "office";
   tech: string[];
   layout: "highlights" | "projects";
+  languages: ("es" | "en")[];
   iconImageURL?: string;
   iconNodes?: ReactNode[];
   projects?: Project[];
@@ -38,6 +39,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     period: { start: "Jul 2023", end: null },
     workType: "remote",
     layout: "highlights",
+    languages: ["en"],
     iconNodes: [
       <Solvd
         key="solvd-logo"
@@ -75,6 +77,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     period: { start: "Nov 2020", end: "Jul 2023" },
     workType: "remote",
     layout: "projects",
+    languages: ["es", "en"],
     iconImageURL: "/experience/exo-logo.png",
     tech: [
       "react",
@@ -182,6 +185,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     period: { start: "Jun 2019", end: "Oct 2020" },
     workType: "office",
     layout: "highlights",
+    languages: ["es"],
     clientURL: "https://sancorsalud.com.ar/",
     iconNodes: [<SanCorSalud key="sancor-logo" height={20} width={20} />],
     iconImageURL: "/experience/i2t-logo.png",
@@ -210,6 +214,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     companyURL: "http://www.cooperativalopez.com.ar/",
     period: { start: "2018", end: "2019" },
     workType: "hybrid",
+    languages: ["es"],
     layout: "highlights",
     iconImageURL: "/experience/call-logo.png",
     tech: ["android", "java", "dotnet", "csharp", "twilio"],
@@ -220,6 +225,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     companyURL: "https://www.i2t.com.ar/",
     period: { start: "Nov 2018", end: "May 2019" },
     iconImageURL: "/experience/i2t-logo.png",
+    languages: ["es"],
     workType: "office",
     layout: "highlights",
     tech: ["php", "expressjs", "mysql", "javascript"],

@@ -7,8 +7,15 @@ import { Title } from "./Title";
 type Props = { entry: ExperienceEntry; isPresent: boolean };
 
 export async function Header({ entry, isPresent }: Props) {
-  const { companyName, companyURL, id, iconImageURL, iconNodes, workType } =
-    entry;
+  const {
+    companyName,
+    companyURL,
+    iconImageURL,
+    iconNodes,
+    id,
+    languages,
+    workType,
+  } = entry;
 
   return (
     <div
@@ -29,7 +36,11 @@ export async function Header({ entry, isPresent }: Props) {
           iconImageURL={iconImageURL}
           iconNodes={iconNodes}
         />
-        <PositionDescription id={id} workType={workType} />
+        <PositionDescription
+          id={id}
+          workType={workType}
+          languages={languages}
+        />
       </div>
       <TimeFrame
         isPresent={isPresent}
