@@ -28,7 +28,8 @@ export function Title({
             src={iconImageURL}
             alt={`${companyName} company logo`}
             width={isI2t ? 35 : 25}
-            height={isI2t ? 35 : 25}
+            height={0}
+            style={{ height: "auto" }}
           />
         )}
         {iconNodes}
