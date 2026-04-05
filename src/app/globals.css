@@ -157,6 +157,7 @@
   --foreground: oklch(0.145 0 0);
 
   --mobile-nav-height: calc(70px + env(safe-area-inset-bottom, 0px));
+  --desktop-max-width: 896px;
 }
 
 :root.dark {

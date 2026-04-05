@@ -20,10 +20,26 @@ export function Desktop({ links }: { links: Link[] }) {
         "shadow-sm",
       )}
     >
-      <div className={cn("flex", "items-center", "h-full", "gap-5", "w-full", "px-6", "max-w-7xl")}>
+      <div
+        className={cn(
+          "flex",
+          "items-center",
+          "h-full",
+          "gap-5",
+          "w-full",
+          "px-6",
+          "max-w-(--desktop-max-width)",
+        )}
+      >
         <nav
           aria-label="Main navigation"
-          className={cn("flex", "items-center", "justify-between", "h-full", "w-full")}
+          className={cn(
+            "flex",
+            "items-center",
+            "justify-between",
+            "h-full",
+            "w-full",
+          )}
         >
           <Home />
           <div className={cn("flex", "items-center", "gap-3")}>

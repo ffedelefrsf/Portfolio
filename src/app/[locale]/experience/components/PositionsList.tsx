@@ -4,7 +4,7 @@ import { PositionCard } from "./PositionCard";
 
 export function PositionsList() {
   return (
-    <div className={cn("relative", "max-w-4xl")}>
+    <div className={cn("relative")}>
       <div
         className={cn(
           "absolute",

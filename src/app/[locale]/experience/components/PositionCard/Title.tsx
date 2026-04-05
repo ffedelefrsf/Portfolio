@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { cn } from "@/lib/utils";
 import { ExperienceEntry } from "../../data";
@@ -8,6 +9,8 @@ type Props = { entry: ExperienceEntry; isPresent: boolean };
 
 export async function Title({ entry, isPresent }: Props) {
   const t = await getTranslations(TRANSLATION_NAME);
+
+  const isI2t = entry.company.includes("i2T");
 
   return (
     <div
@@ -22,27 +25,42 @@ export async function Title({ entry, isPresent }: Props) {
       )}
     >
       <div>
-        <h2 className={cn("text-xl", "font-bold", "text-foreground")}>
-          {entry.companyUrl ? (
-            <a
-              href={entry.companyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                "inline-flex",
-                "items-center",
-                "gap-1.5",
-                "transition-colors",
-                "hover:text-primary",
-              )}
-            >
-              {entry.company}
-              <ExternalLink aria-hidden className={cn("size-4", "shrink-0")} />
-            </a>
-          ) : (
-            entry.company
+        <div className={cn("flex", "items-center", "gap-2")}>
+          {entry.iconImage && (
+            <Image
+              {...(isI2t && { className: cn("invert", "dark:invert-0") })}
+              src={entry.iconImage}
+              alt={`${entry.company} company logo`}
+              width={isI2t ? 35 : 25}
+              height={isI2t ? 35 : 25}
+            />
           )}
-        </h2>
+          {entry.icons}
+          <h2 className={cn("text-xl", "font-bold", "text-foreground")}>
+            {entry.companyUrl ? (
+              <a
+                href={entry.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "inline-flex",
+                  "items-center",
+                  "gap-1.5",
+                  "transition-colors",
+                  "hover:text-primary",
+                )}
+              >
+                {entry.company}
+                <ExternalLink
+                  aria-hidden
+                  className={cn("size-4", "shrink-0")}
+                />
+              </a>
+            ) : (
+              entry.company
+            )}
+          </h2>
+        </div>
         <p className={cn("mt-0.5", "text-sm", "font-medium", "text-muted")}>
           {t(`entries.${entry.id}.role`)} &middot;{" "}
           {t(`workTypes.${entry.workType}`)}

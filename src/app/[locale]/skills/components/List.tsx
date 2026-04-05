@@ -10,7 +10,7 @@ export async function List() {
   const t = await getTranslations(TRANSLATION_NAME);
 
   return (
-    <div className={cn("max-w-4xl", "group")}>
+    <div className={cn("group")}>
       <Filter />
       <div>
         {SKILL_CATEGORIES.map(({ id, skills }, index) => (

@@ -1,3 +1,9 @@
+import { ReactNode } from "react";
+import { NerdWallet } from "@/cross-site/ui/company-icons/NerdWallet";
+import { SanCorSalud } from "@/cross-site/ui/company-icons/SanCorSalud";
+import { Solvd } from "@/cross-site/ui/company-icons/Solvd";
+import { cn } from "@/lib/utils";
+
 export type ProjectLink =
   | { type: "website"; url: string; outOfBusiness?: boolean }
   | { type: "ios"; url: string; outOfBusiness?: boolean }
@@ -19,6 +25,8 @@ export type ExperienceEntry = {
   tech: string[];
   layout: "highlights" | "projects";
   hasClient?: boolean;
+  iconImage?: string;
+  icons?: ReactNode[];
   projects?: Project[];
 };
 
@@ -32,6 +40,15 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     workType: "remote",
     layout: "highlights",
     hasClient: true,
+    icons: [
+      <Solvd
+        key="solvd-logo"
+        height={20}
+        width={20}
+        className={cn("invert-0", "dark:invert")}
+      />,
+      <NerdWallet key="nerdwallet-logo" height={18} width={18} />,
+    ],
     tech: [
       "nextjs",
       "typescript",
@@ -60,6 +77,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     period: { start: "Nov 2020", end: "Jul 2023" },
     workType: "remote",
     layout: "projects",
+    iconImage: "/experience/exo-logo.png",
     tech: [
       "react",
       "reactnative",
@@ -167,6 +185,8 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     workType: "office",
     layout: "highlights",
     clientUrl: "https://sancorsalud.com.ar/",
+    icons: [<SanCorSalud key="sancor-logo" height={20} width={20} />],
+    iconImage: "/experience/i2t-logo.png",
     hasClient: true,
     tech: [
       "java",
@@ -194,6 +214,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     period: { start: "2018", end: "2019" },
     workType: "hybrid",
     layout: "highlights",
+    iconImage: "/experience/call-logo.png",
     tech: ["android", "java", "dotnet", "csharp", "twilio"],
   },
   {
@@ -201,6 +222,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     company: "i2T S.A.",
     companyUrl: "https://www.i2t.com.ar/",
     period: { start: "Nov 2018", end: "May 2019" },
+    iconImage: "/experience/i2t-logo.png",
     workType: "office",
     layout: "highlights",
     tech: ["php", "expressjs", "mysql", "javascript"],

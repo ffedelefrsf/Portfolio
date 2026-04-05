@@ -6,7 +6,8 @@ import { Params } from "../types";
 import { TRANSLATION_NAME } from "./translation/config";
 
 export default async function Home({ params }: Params) {
-  await initializeI18N(params);
+  const { locale } = await params;
+  await initializeI18N(locale);
   const t = await getTranslations(TRANSLATION_NAME);
 
   return (

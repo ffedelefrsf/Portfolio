@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
+import { useEffect } from "react";
 import {
   Select,
   SelectContent,
@@ -11,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SELECT_ITEMS } from "@/i18n/utils";
+import { SELECT_ITEMS, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
 import { setLocale } from "../../../i18n/actions";
 
@@ -19,6 +20,15 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+
+  useEffect(() => {
+    SUPPORTED_LANGUAGES.forEach((supportedLanguage) => {
+      if (locale !== supportedLanguage) {
+        router.prefetch(pathname.replace(locale, supportedLanguage));
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locale, pathname]);
 
   async function handleChange(value: string | null) {
     if (value) {

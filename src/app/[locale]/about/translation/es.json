@@ -1,3 +1,69 @@
 {
-  "title": "Sobre mí"
+  "title": "Sobre mí",
+  "subtitle": "La persona detrás del código.",
+  "workEthic": {
+    "title": "Forma de trabajo",
+    "paragraph1": "Soy un ingeniero de software que se toma en serio tanto la vida como el trabajo. Naturalmente construyo conexiones fuertes donde quiera que vaya — disfruto acercarme a las personas con las que trabajo y funcionar como un verdadero equipo, basado en confianza y sinergia. Al mismo tiempo, nunca pierdo de vista lo que más me importa: el respeto, la verdad y la amabilidad — valores que son innegociables en mi forma de trabajar y colaborar.",
+    "paragraph2": "Me importa profundamente lo que construyo y naturalmente me exijo al máximo. No porque tenga que hacerlo, sino porque creo que las cosas deben hacerse bien. Algunos pueden verlo como intensidad; mis compañeros suelen experimentarlo como elevar el nivel — entregando calidad, impulsando las cosas hacia adelante y generando momentum en el equipo.",
+    "paragraph3": "Sin proponérmelo, suelo encontrarme asumiendo un rol de liderazgo — organizando, aportando claridad y tomando acción cuando las cosas se sienten estancadas o inciertas. Soy el tipo de persona que se mueve cuando nadie más lo hace, y ayuda a los demás a moverse conmigo.",
+    "paragraph4": "Para mí, el buen trabajo no se trata solo de escribir código — se trata de ownership, consistencia y dejar las cosas mejor de como las encontré.",
+    "cleanCode": {
+      "title": "Código limpio",
+      "description": "Tipado fuerte, patrones consistentes y legibilidad sobre inteligencia."
+    },
+    "testing": {
+      "title": "Cobertura de tests",
+      "description": "Tests unitarios, de integración y E2E como prioridad, no como extra."
+    },
+    "observability": {
+      "title": "Observabilidad",
+      "description": "Monitoreo proactivo con métricas, logs y alertas desde el primer día."
+    },
+    "collaboration": {
+      "title": "Colaboración",
+      "description": "Comunicación clara, mentoreo y cultura de equipo inclusiva."
+    }
+  },
+  "personal": {
+    "title": "Más allá de la pantalla",
+    "myself": "Para mí, la vida se trata de equilibrio: hacer un trabajo con sentido, mantenerse activo y compartir momentos con las personas que más importan. Aquí algunos momentos que representan quién soy fuera del trabajo:",
+    "family": "La familia está en el centro de mi vida. Cuando puedo, viajo a visitar a mis padres — esos momentos son importantes para mí, una forma de desconectarme, recargar energías y mantenerme con los pies en la tierra.",
+    "pets": "También tengo un amor profundo por los perros. Comparto mis días con Kira, mi Labrador, y Shyren, mi Collie — no son solo mascotas, son verdaderos compañeros. Honestamente, algo tan simple como ver un perro en la calle puede hacerme el día mejor.",
+    "workout": "Aunque no tengo fotos, mantenerme activo es una parte importante de quién soy. Entreno regularmente con CrossFit, running y fútbol — me ayuda a mantener la mente despejada y la energía alta.",
+    "travel": "También disfruto viajar, tanto con familia como con amigos, creando nuevas experiencias en el camino. Las actividades que más disfruté hasta ahora son el buceo y el trekking — experiencias que me sacan de mi zona de confort y me permiten conectarme con la naturaleza de una manera diferente.",
+    "images": {
+      "me": {
+        "barcelona": "caminando en la lluvia",
+        "kayak": "kayaking",
+        "marcelli": "en la playa",
+        "mendoza": "cañón del Atuel",
+        "perito-moreno": "caminando sobre el glaciar",
+        "river": "en un partido"
+      },
+      "family": {
+        "dad": "abrazando a papá",
+        "mom": "cumpleaños de mamá",
+        "holding-mom": "sosteniendo a mamá",
+        "elevator": "divertida foto en ascensor",
+        "graduation": "recién graduado",
+        "grandma": "los 95 de la abuela"
+      },
+      "dogs": {
+        "kira-backyard": "día nublado en el patio",
+        "kira-reading": "otra noche de Sábado",
+        "kira": "Kira",
+        "shyren": "Shyren",
+        "shyren-kiss": "el beso más lindo",
+        "shyren-couch": "en el sofá (no le digas a papá!)"
+      },
+      "travel": {
+        "brazil": "en un bote",
+        "cajon-del-azul": "cajón del azul",
+        "fitz-roy": "nevando en el Fitz Roy",
+        "mardel": "visitando la costa de Mar del Plata",
+        "nacho": "descansando en el lago",
+        "scuba": "buceando"
+      }
+    }
+  }
 }

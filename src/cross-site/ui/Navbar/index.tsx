@@ -25,7 +25,7 @@ export async function Navbar({ locale }: { locale: SupportedLanguage }) {
         "sm:sticky",
         "sm:h-16",
         "sm:top-0",
-        "sm:z-50",
+        "sm:z-100",
       )}
     >
       <Desktop links={links.slice(1)} />

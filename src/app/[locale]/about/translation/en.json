@@ -1,3 +1,69 @@
 {
-  "title": "About"
+  "title": "About me",
+  "subtitle": "The person behind the code",
+  "workEthic": {
+    "title": "How I work",
+    "paragraph1": "I'm a software engineer who takes both life and work seriously. I naturally build strong connections wherever I go — I enjoy getting close to the people I work with and working as a true team, built on trust and synergy. At the same time, I never lose sight of what matters most to me: respect, truth, and kindness — values that are non-negotiable in how I work and collaborate.",
+    "paragraph2": "I care deeply about what I build, and I naturally push myself to go the extra mile. Not because I have to, but because I believe things should be done well. Some might see it as intensity; my teammates usually experience it as raising the bar — delivering quality, moving things forward, and creating momentum within the team.",
+    "paragraph3": "Without really trying to, I often find myself stepping into a leadership role — organizing, bringing clarity, and taking action when things feel stuck or uncertain. I'm the kind of person who moves when nobody else does, and helps others move with me.",
+    "paragraph4": "For me, good work is not just about writing code — it's about ownership, consistency, and leaving things better than I found them.",
+    "cleanCode": {
+      "title": "Clean code",
+      "description": "Strong typing, consistent patterns, and readability over cleverness."
+    },
+    "testing": {
+      "title": "Test coverage",
+      "description": "Unit, integration, and E2E tests as a first-class concern, not an afterthought."
+    },
+    "observability": {
+      "title": "Observability",
+      "description": "Proactive monitoring with metrics, logs, and alerting from day one."
+    },
+    "collaboration": {
+      "title": "Collaboration",
+      "description": "Clear communication, mentorship, and building inclusive team culture."
+    }
+  },
+  "personal": {
+    "title": "Beyond the screen",
+    "myself": "My life is about balance: doing meaningful work, staying active, and sharing moments with the people that matter most. Here are a few moments that represent who I am outside of work:",
+    "family": "Family is at the center of my life. Whenever I can, I travel to visit my parents — those moments are important to me, a way to disconnect, recharge, and stay grounded.",
+    "pets": "I also have a deep love for dogs. I share my days with Kira, my Labrador, and Shyren, my Collie — they're not just pets, they're true companions. Honestly, even something as simple as seeing a dog on the street can make my day better.",
+    "workout": "Although I do not have pictures, staying active is a big part of who I am. I train regularly through CrossFit, running, and soccer — it helps me keep a clear mind and high energy.",
+    "travel": "I enjoy traveling as well, both with family and friends, creating new experiences along the way. The activities I've enjoyed the most so far are scuba diving and trekking — experiences that push me out of my comfort zone and let me connect with nature in a different way.",
+    "images": {
+      "me": {
+        "barcelona": "walking in the rain",
+        "kayak": "kayaking",
+        "marcelli": "at the beach",
+        "mendoza": "canyon",
+        "perito-moreno": "walking above the glacier",
+        "river": "at a game"
+      },
+      "family": {
+        "dad": "hugging dad",
+        "holding-mom": "holding mom with bros",
+        "mom": "mom's birthday",
+        "elevator": "fun gen-z pic at the elevator",
+        "graduation": "just graduated",
+        "grandma": "grandma's 95"
+      },
+      "dogs": {
+        "kira-backyard": "cloudy day in the backyard",
+        "kira-reading": "just another Saturday night",
+        "kira": "Kira",
+        "shyren": "Shyren",
+        "shyren-kiss": "lovely kiss",
+        "shyren-couch": "up in the couch (don't tell dad!)"
+      },
+      "travel": {
+        "brazil": "on a boat",
+        "cajon-del-azul": "cajon del azul",
+        "fitz-roy": "snowing at the Fitz Roy",
+        "mardel": "visiting Mar del Plata coast",
+        "nacho": "a break in the lake",
+        "scuba": "scuba diving"
+      }
+    }
+  }
 }

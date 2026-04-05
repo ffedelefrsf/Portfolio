@@ -31,7 +31,7 @@ export default async function LocaleLayout({
           "sm:px-6",
           "lg:px-8",
           "w-full",
-          "max-w-7xl",
+          "max-w-(--desktop-max-width)",
         )}
       >
         {children}

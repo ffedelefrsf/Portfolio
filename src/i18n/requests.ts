@@ -6,33 +6,42 @@ import { TRANSLATION_NAME as CONTACT } from "../app/[locale]/contact/translation
 import { TRANSLATION_NAME as EXPERIENCE } from "../app/[locale]/experience/translation/config";
 import { TRANSLATION_NAME as SKILLS } from "../app/[locale]/skills/translation/config";
 import { TRANSLATION_NAME as NAVBAR } from "../cross-site/ui/Navbar/translation/config";
+import { SupportedLanguage, TranslationName } from "./types";
 import { isSupportedLanguage } from "./utils";
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = (await requestLocale) ?? "en";
+export default getRequestConfig(
+  async ({
+    requestLocale,
+  }): Promise<{
+    locale: SupportedLanguage;
+    messages: Record<TranslationName, object>;
+  }> => {
+    const locale = (await requestLocale) ?? "en";
 
-  if (!isSupportedLanguage(locale)) {
-    notFound();
-  }
+    if (!isSupportedLanguage(locale)) {
+      notFound();
+    }
 
-  const [navbar, home, skills, experience, about, contact] = await Promise.all([
-    import(`../cross-site/ui/Navbar/translation/${locale}.json`),
-    import(`../app/[locale]/(root)/translation/${locale}.json`),
-    import(`../app/[locale]/skills/translation/${locale}.json`),
-    import(`../app/[locale]/experience/translation/${locale}.json`),
-    import(`../app/[locale]/about/translation/${locale}.json`),
-    import(`../app/[locale]/contact/translation/${locale}.json`),
-  ]);
+    const [navbar, home, skills, experience, about, contact] =
+      await Promise.all([
+        import(`../cross-site/ui/Navbar/translation/${locale}.json`),
+        import(`../app/[locale]/(root)/translation/${locale}.json`),
+        import(`../app/[locale]/skills/translation/${locale}.json`),
+        import(`../app/[locale]/experience/translation/${locale}.json`),
+        import(`../app/[locale]/about/translation/${locale}.json`),
+        import(`../app/[locale]/contact/translation/${locale}.json`),
+      ]);
 
-  return {
-    locale,
-    messages: {
-      [NAVBAR]: navbar.default,
-      [HOME]: home.default,
-      [SKILLS]: skills.default,
-      [EXPERIENCE]: experience.default,
-      [ABOUT]: about.default,
-      [CONTACT]: contact.default,
-    },
-  };
-});
+    return {
+      locale,
+      messages: {
+        [NAVBAR]: navbar.default,
+        [HOME]: home.default,
+        [SKILLS]: skills.default,
+        [EXPERIENCE]: experience.default,
+        [ABOUT]: about.default,
+        [CONTACT]: contact.default,
+      },
+    };
+  },
+);
