@@ -13,7 +13,7 @@ export async function Header({ entry, isPresent }: Props) {
     iconImageURL,
     iconNodes,
     id,
-    languages,
+    regions,
     workType,
   } = entry;
 
@@ -36,11 +36,7 @@ export async function Header({ entry, isPresent }: Props) {
           iconImageURL={iconImageURL}
           iconNodes={iconNodes}
         />
-        <PositionDescription
-          id={id}
-          workType={workType}
-          languages={languages}
-        />
+        <PositionDescription id={id} workType={workType} regions={regions} />
       </div>
       <TimeFrame
         isPresent={isPresent}
