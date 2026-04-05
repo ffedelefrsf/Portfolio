@@ -55,6 +55,6 @@ export function getSkillExperienceInfo(skill: string): SkillExperienceInfo {
   return {
     totalMonths,
     years: Math.floor(totalMonths / 12),
-    entries: matching.map((e) => ({ id: e.id, company: e.company })),
+    entries: matching.map((e) => ({ id: e.id, company: e.companyName })),
   };
 }
