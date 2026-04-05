@@ -1,7 +1,9 @@
 import { PageWrapper } from "@/cross-site/ui/PageWrapper";
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
+import { cn } from "@/lib/utils";
 import { Params } from "../types";
-import { PositionsList } from "./components/PositionsList";
+import { PositionCard } from "./components/PositionCard";
+import { EXPERIENCE_ENTRIES } from "./data";
 import { TRANSLATION_NAME } from "./translation/config";
 
 export default async function ExperiencePage({ params }: Params) {
@@ -10,7 +12,23 @@ export default async function ExperiencePage({ params }: Params) {
 
   return (
     <PageWrapper translationName={TRANSLATION_NAME}>
-      <PositionsList />
+      <div className={cn("relative")}>
+        <div
+          className={cn(
+            "absolute",
+            "bottom-0",
+            "left-2.75",
+            "top-6",
+            "w-0.5",
+            "bg-border",
+          )}
+        />
+        <div>
+          {EXPERIENCE_ENTRIES.map((entry) => (
+            <PositionCard key={entry.id} entry={entry} />
+          ))}
+        </div>
+      </div>
     </PageWrapper>
   );
 }

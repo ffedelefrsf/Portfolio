@@ -17,30 +17,28 @@ export type Project = {
 
 export type ExperienceEntry = {
   id: string;
-  company: string;
-  companyUrl?: string;
-  clientUrl?: string;
+  companyName: string;
+  companyURL: string;
+  clientURL?: string;
   period: { start: string; end: string | null };
   workType: "remote" | "hybrid" | "office";
   tech: string[];
   layout: "highlights" | "projects";
-  hasClient?: boolean;
-  iconImage?: string;
-  icons?: ReactNode[];
+  iconImageURL?: string;
+  iconNodes?: ReactNode[];
   projects?: Project[];
 };
 
 export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   {
     id: "solvd",
-    company: "Solvd",
-    companyUrl: "https://www.solvd.com/",
-    clientUrl: "https://www.nerdwallet.com/credit-cards/best",
+    companyName: "Solvd",
+    companyURL: "https://www.solvd.com/",
+    clientURL: "https://www.nerdwallet.com/credit-cards/best",
     period: { start: "Jul 2023", end: null },
     workType: "remote",
     layout: "highlights",
-    hasClient: true,
-    icons: [
+    iconNodes: [
       <Solvd
         key="solvd-logo"
         height={20}
@@ -72,12 +70,12 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   },
   {
     id: "exoMindset",
-    company: "Exo Mindset",
-    companyUrl: "https://exomindset.co/en/",
+    companyName: "Exo Mindset",
+    companyURL: "https://exomindset.co/en/",
     period: { start: "Nov 2020", end: "Jul 2023" },
     workType: "remote",
     layout: "projects",
-    iconImage: "/experience/exo-logo.png",
+    iconImageURL: "/experience/exo-logo.png",
     tech: [
       "react",
       "reactnative",
@@ -179,15 +177,14 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   },
   {
     id: "i2tSenior",
-    company: "i2T S.A.",
-    companyUrl: "https://www.i2t.com.ar/",
+    companyName: "i2T S.A.",
+    companyURL: "https://www.i2t.com.ar/",
     period: { start: "Jun 2019", end: "Oct 2020" },
     workType: "office",
     layout: "highlights",
-    clientUrl: "https://sancorsalud.com.ar/",
-    icons: [<SanCorSalud key="sancor-logo" height={20} width={20} />],
-    iconImage: "/experience/i2t-logo.png",
-    hasClient: true,
+    clientURL: "https://sancorsalud.com.ar/",
+    iconNodes: [<SanCorSalud key="sancor-logo" height={20} width={20} />],
+    iconImageURL: "/experience/i2t-logo.png",
     tech: [
       "java",
       "spring",
@@ -209,20 +206,20 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   },
   {
     id: "cooperativa",
-    company: "Cooperativa Agropecuaria de López",
-    companyUrl: "http://www.cooperativalopez.com.ar/",
+    companyName: "Cooperativa Agropecuaria de López",
+    companyURL: "http://www.cooperativalopez.com.ar/",
     period: { start: "2018", end: "2019" },
     workType: "hybrid",
     layout: "highlights",
-    iconImage: "/experience/call-logo.png",
+    iconImageURL: "/experience/call-logo.png",
     tech: ["android", "java", "dotnet", "csharp", "twilio"],
   },
   {
     id: "i2tIntern",
-    company: "i2T S.A.",
-    companyUrl: "https://www.i2t.com.ar/",
+    companyName: "i2T S.A.",
+    companyURL: "https://www.i2t.com.ar/",
     period: { start: "Nov 2018", end: "May 2019" },
-    iconImage: "/experience/i2t-logo.png",
+    iconImageURL: "/experience/i2t-logo.png",
     workType: "office",
     layout: "highlights",
     tech: ["php", "expressjs", "mysql", "javascript"],

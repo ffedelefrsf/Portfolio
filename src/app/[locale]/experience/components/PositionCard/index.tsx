@@ -1,17 +1,14 @@
-import { ExternalLink } from "lucide-react";
-import { getTranslations } from "next-intl/server";
 import { cn } from "@/lib/utils";
 import { ExperienceEntry } from "../../data";
-import { TRANSLATION_NAME } from "../../translation/config";
+import { ClientService } from "./ClientService";
+import { Header } from "./Header";
 import { Highlights } from "./Highlights";
 import { Projects } from "./Projects";
 import { TechStack } from "./TechStack";
-import { Title } from "./Title";
 
 type Props = { entry: ExperienceEntry };
 
-export async function PositionCard({ entry }: Props) {
-  const t = await getTranslations(TRANSLATION_NAME);
+export function PositionCard({ entry }: Props) {
   const isPresent = entry.period.end === null;
 
   return (
@@ -63,39 +60,11 @@ export async function PositionCard({ entry }: Props) {
           "sm:p-6",
         )}
       >
-        <Title entry={entry} isPresent={isPresent} />
+        <Header entry={entry} isPresent={isPresent} />
 
-        {entry.hasClient && (
-          <p
-            className={cn(
-              "mb-4",
-              "inline-flex",
-              "items-center",
-              "gap-1.5",
-              "text-sm",
-              "italic",
-              "text-muted",
-            )}
-          >
-            {t(`entries.${entry.id}.client`)}
-            {entry.clientUrl && (
-              <a
-                href={entry.clientUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("visitWebsite")}
-                className={cn(
-                  "shrink-0",
-                  "transition-colors",
-                  "hover:text-primary",
-                )}
-              >
-                <ExternalLink aria-hidden className={cn("size-3.5")} />
-              </a>
-            )}
-          </p>
+        {entry.clientURL && (
+          <ClientService id={entry.id} clientURL={entry.clientURL} />
         )}
-
         {entry.layout === "highlights" && <Highlights entryId={entry.id} />}
         {entry.layout === "projects" && <Projects entry={entry} />}
 
