@@ -21,16 +21,24 @@ export function Title({
     <div className={cn("flex", "items-center", "gap-3")}>
       <div className={cn("flex", "items-center", "gap-2")}>
         {iconImageURL && (
-          <Image
-            {...(isI2t && {
-              className: cn("invert", "dark:invert-0", "mr-[-5px]"),
+          <div
+            className={cn("relative", "h-6.25", "w-6.25", {
+              "h-8.75": isI2t,
+              "w-8.75": isI2t,
+              "-mr-1.25": isI2t,
             })}
-            src={iconImageURL}
-            alt={`${companyName} company logo`}
-            width={isI2t ? 35 : 25}
-            height={0}
-            style={{ height: "auto" }}
-          />
+          >
+            <Image
+              className={cn("object-contain", {
+                invert: isI2t,
+                "dark:invert-0": isI2t,
+              })}
+              src={iconImageURL}
+              alt={`${companyName} company logo`}
+              fill
+              sizes={isI2t ? "35px" : "25px"}
+            />
+          </div>
         )}
         {iconNodes}
       </div>
