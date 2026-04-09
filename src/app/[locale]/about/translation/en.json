@@ -3,10 +3,10 @@
   "subtitle": "The person behind the code",
   "workEthic": {
     "title": "How I work",
-    "paragraph1": "I'm a software engineer who takes both life and work seriously. I naturally build strong connections wherever I go — I enjoy getting close to the people I work with and working as a true team, built on trust and synergy. At the same time, I never lose sight of what matters most to me: respect, truth, and kindness — values that are non-negotiable in how I work and collaborate.",
-    "paragraph2": "I care deeply about what I build, and I naturally push myself to go the extra mile. Not because I have to, but because I believe things should be done well. Some might see it as intensity; my teammates usually experience it as raising the bar — delivering quality, moving things forward, and creating momentum within the team.",
-    "paragraph3": "Without really trying to, I often find myself stepping into a leadership role — organizing, bringing clarity, and taking action when things feel stuck or uncertain. I'm the kind of person who moves when nobody else does, and helps others move with me.",
-    "paragraph4": "For me, good work is not just about writing code — it's about ownership, consistency, and leaving things better than I found them.",
+    "paragraph1": "As a software engineer, I care deeply about what I build, naturally pushing myself to go the extra mile. Not because I have to, but because I am a problem-solving enthusiast. Some teammates have described it as raising the bar, sometimes even complained about it. To me, progress is delivering quality, moving things forward and creating momentum within the team.",
+    "paragraph2": "I tend to build strong connections wherever I go. Getting close and along with the people I work with is essential for working as a true team, pulling in the same direction and reflecting synergy. At the same time, I never lose sight of what matters most to me: respect, truth, and kindness. These values that are non-negotiable in work environments.",
+    "paragraph3": "Without really trying to, I often find myself stepping into a leadership role. Either by organizing, bringing clarity or taking action when things feel stuck or uncertain. I'm the kind of person who reacts and helps others move together when everybody else is in silence waiting for someone to speak up/move.",
+    "paragraph4": "For me, good work is not just about writing quality code. It's also about ownership, consistency, and leaving things better than I found them.",
     "cleanCode": {
       "title": "Clean code",
       "description": "Strong typing, consistent patterns, and readability over cleverness."
@@ -21,14 +21,14 @@
     },
     "collaboration": {
       "title": "Collaboration",
-      "description": "Clear communication, mentorship, and building inclusive team culture."
+      "description": "Clear communication, teamwork, and building inclusive team culture."
     }
   },
   "personal": {
     "title": "Beyond the screen",
     "myself": "My life is about balance: doing meaningful work, staying active, and sharing moments with the people that matter most.\nHere are a few moments that reflect who I am outside of work:",
     "family": "I live alone in a small apartment in a city called Santa Fe (Argentina), and most weekends I drive to visit my parents.\nFamily is at the center of my life. I heavily rely on them and they count on me for anything.\nWe are one strong team. They are my shelter, we share everything; when something good happens, it belongs to all of us; and the same goes for the hard moments.\nGrowing up in an environment with these people shaped who I am today. It's where I learned the importance of trust, support, and showing up for others, values I carry with me in every aspect of my life.\n",
-    "pets": "We've always had dogs at home; these wonderful creatures mean a lot to me. They are true companions, loyal like no other.\nRight now, I share my days with Kira and Shyren. There have been a few others before them though, I'll never forget any of them.\nEven something as simple as seeing or petting a dog on the street and getting a tail wag back is enough to make my day better.",
+    "pets": "We've always had dogs at home; these wonderful creatures mean a lot to me. They are true companions, loyal like no other.\nRight now, I share my days with Kira and Shyren. There have been a few others before though, I'll always remember them.\nEven something as simple as seeing or petting a dog on the street and getting a tail wag back is enough to make my day better.",
     "travel": "One of the things I enjoy the most is traveling, especially with family and friends.\nI love discovering new places, cultures, and environments; but to me, the most important part of any trip is the people you share it with. As I like to say: “It's not really about where you go, but who you go with.”.\nMy favorite activities so far have been scuba diving and trekking.",
     "disconnection": "Taking time to disconnect is an important part of maintaining balance, especially after long and demanding days.\n🧘 😌 🙅‍♂️ To disconnect: I am intentional about reducing distractions by limiting social media use, avoiding doom-scrolling, and keeping notifications under control.\n🏋️‍♂️ 🏃‍♂️ ⚽️ To stay active: I train regularly through CrossFit, go running, and occasionally play soccer.\n📺 👾 🎧 To entertain myself: I watch movies and TV shows, as well as play video and board games; but, overall, listen to music; putting on my headphones and hitting “play” is fuel for any kind of effort.",
     "images": {

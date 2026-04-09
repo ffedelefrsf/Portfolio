@@ -3,10 +3,10 @@
   "subtitle": "La persona detrás del código.",
   "workEthic": {
     "title": "Forma de trabajo",
-    "paragraph1": "Soy un ingeniero de software que se toma en serio tanto la vida como el trabajo. Naturalmente construyo conexiones fuertes donde quiera que vaya — disfruto acercarme a las personas con las que trabajo y funcionar como un verdadero equipo, basado en confianza y sinergia. Al mismo tiempo, nunca pierdo de vista lo que más me importa: el respeto, la verdad y la amabilidad — valores que son innegociables en mi forma de trabajar y colaborar.",
-    "paragraph2": "Me importa profundamente lo que construyo y naturalmente me exijo al máximo. No porque tenga que hacerlo, sino porque creo que las cosas deben hacerse bien. Algunos pueden verlo como intensidad; mis compañeros suelen experimentarlo como elevar el nivel — entregando calidad, impulsando las cosas hacia adelante y generando momentum en el equipo.",
-    "paragraph3": "Sin proponérmelo, suelo encontrarme asumiendo un rol de liderazgo — organizando, aportando claridad y tomando acción cuando las cosas se sienten estancadas o inciertas. Soy el tipo de persona que se mueve cuando nadie más lo hace, y ayuda a los demás a moverse conmigo.",
-    "paragraph4": "Para mí, el buen trabajo no se trata solo de escribir código — se trata de ownership, consistencia y dejar las cosas mejor de como las encontré.",
+    "paragraph1": "Como ingeniero de software, me apasiona lo que desarrollo y, naturalmente, me esfuerzo al máximo. No porque tenga que hacerlo, sino porque me entusiasma resolver problemas. Algunos compañeros lo han descrito como elevar el nivel, e incluso a veces se han quejado. Para mí, el progreso consiste en ofrecer calidad, impulsar el proyecto y generar dinamismo dentro del equipo.",
+    "paragraph2": "Suelo forjar vínculos sólidos allá donde voy. Es fundamental conectar con mis compañeros de trabajo para funcionar como un verdadero equipo, remando en la misma dirección y generando sinergia. Al mismo tiempo, nunca pierdo de vista lo que más me importa: el respeto, la verdad y la amabilidad. Estos valores son innegociables en el entorno laboral.",
+    "paragraph3": "Inconscientemente suelo asumir roles de liderazgo, ya sea organizando, aportando claridad o tomando la iniciativa cuando las cosas se estancan o generan incertidumbre. Soy de las personas que reaccionan y ayudan a los demás a avanzar juntos cuando el resto guarda silencio esperando que alguien más hable o actúe.",
+    "paragraph4": "Para mí, un buen trabajo no se trata sólo de escribir código de calidad. También se trata de responsabilidad, coherencia y de dejar las cosas mejor de como las encontré.",
     "cleanCode": {
       "title": "Código limpio",
       "description": "Tipado fuerte, patrones consistentes y legibilidad sobre inteligencia."
@@ -21,7 +21,7 @@
     },
     "collaboration": {
       "title": "Colaboración",
-      "description": "Comunicación clara, mentoreo y cultura de equipo inclusiva."
+      "description": "Comunicación clara, instrucción y cultura de equipo inclusiva."
     }
   },
   "personal": {
