@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
+import { TRANSLATION_NAME as ABOUT } from "../app/[locale]/(pages)/about/translation/config";
+import { TRANSLATION_NAME as CONTACT } from "../app/[locale]/(pages)/contact/translation/config";
+import { TRANSLATION_NAME as EXPERIENCE } from "../app/[locale]/(pages)/experience/translation/config";
+import { TRANSLATION_NAME as SKILLS } from "../app/[locale]/(pages)/skills/translation/config";
 import { TRANSLATION_NAME as HOME } from "../app/[locale]/(root)/translation/config";
-import { TRANSLATION_NAME as ABOUT } from "../app/[locale]/about/translation/config";
-import { TRANSLATION_NAME as CONTACT } from "../app/[locale]/contact/translation/config";
-import { TRANSLATION_NAME as EXPERIENCE } from "../app/[locale]/experience/translation/config";
-import { TRANSLATION_NAME as SKILLS } from "../app/[locale]/skills/translation/config";
 import { TRANSLATION_NAME as NAVBAR } from "../cross-site/ui/Navbar/translation/config";
 import { SupportedLanguage, TranslationName } from "./types";
 import { isSupportedLanguage } from "./utils";
@@ -26,10 +26,10 @@ export default getRequestConfig(
       await Promise.all([
         import(`../cross-site/ui/Navbar/translation/${locale}.json`),
         import(`../app/[locale]/(root)/translation/${locale}.json`),
-        import(`../app/[locale]/skills/translation/${locale}.json`),
-        import(`../app/[locale]/experience/translation/${locale}.json`),
-        import(`../app/[locale]/about/translation/${locale}.json`),
-        import(`../app/[locale]/contact/translation/${locale}.json`),
+        import(`../app/[locale]/(pages)/skills/translation/${locale}.json`),
+        import(`../app/[locale]/(pages)/experience/translation/${locale}.json`),
+        import(`../app/[locale]/(pages)/about/translation/${locale}.json`),
+        import(`../app/[locale]/(pages)/contact/translation/${locale}.json`),
       ]);
 
     return {

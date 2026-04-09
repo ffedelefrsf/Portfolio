@@ -44,7 +44,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={cn("flex", "flex-col", "justify-center", "items-center")}
+        className={cn(
+          "flex",
+          "flex-col",
+          "justify-start",
+          "items-center",
+          "min-h-full",
+        )}
       >
         <ClientProviders>{children}</ClientProviders>
       </body>

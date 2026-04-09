@@ -1,7 +1,7 @@
 import { PageWrapper } from "@/cross-site/ui/PageWrapper";
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
-import { Params } from "../types";
+import { Params } from "../../types";
 import { PositionCard } from "./components/PositionCard";
 import { EXPERIENCE_ENTRIES } from "./data";
 import { TRANSLATION_NAME } from "./translation/config";

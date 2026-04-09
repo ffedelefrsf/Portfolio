@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { Navbar } from "@/cross-site/ui/Navbar";
 import { MobileSettingsButton } from "@/cross-site/ui/Navbar/Mobile/MobileSettingsButton";
 import { isSupportedLanguage } from "@/i18n/utils";
-import { cn } from "@/lib/utils";
 
 export default async function LocaleLayout({
   params,
@@ -22,20 +21,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale}>
       <Navbar locale={locale} />
       <MobileSettingsButton />
-      <main
-        className={cn(
-          "mb-(--mobile-nav-height)",
-          "sm:mb-[unset]",
-          "px-4",
-          "py-12",
-          "sm:px-6",
-          "lg:px-8",
-          "w-full",
-          "max-w-(--desktop-max-width)",
-        )}
-      >
-        {children}
-      </main>
+      {children}
     </NextIntlClientProvider>
   );
 }

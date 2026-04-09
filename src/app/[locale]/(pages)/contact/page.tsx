@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { PageWrapper } from "@/cross-site/ui/PageWrapper";
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
-import { Params } from "../types";
+import { Params } from "../../types";
 import { ContactCard } from "./components/ContactCard";
 import { CONTACT_METHODS } from "./data";
 import { TRANSLATION_NAME } from "./translation/config";
