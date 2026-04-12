@@ -10,6 +10,7 @@
 ───────────────────────────────────────────── */
 @theme {
   /* Breakpoints */
+  --breakpoint-xxs: 25rem; /* 400px  */
   --breakpoint-xs: 30rem; /* 480px  */
   --breakpoint-sm: 40rem; /* 640px  */
   --breakpoint-md: 48rem; /* 768px  */

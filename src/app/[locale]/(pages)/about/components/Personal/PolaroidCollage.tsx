@@ -37,9 +37,11 @@ export function PolaroidCollage({ name, items }: Props) {
               "transition",
               "duration-300",
               "ease-in-out",
-              "min-w-40",
+              "min-w-35",
+              "xs:min-w-40",
               "sm:min-w-50",
-              "w-50",
+              "w-43",
+              "xxs:w-50",
               "sm:w-60",
               styles.polaroid,
             )}
@@ -68,7 +70,6 @@ export function PolaroidCollage({ name, items }: Props) {
                 "mt-2",
                 "font-light",
                 "w-full",
-                "truncate",
               )}
               style={{ color: "oklch(0.45 0 0)" }}
             >
