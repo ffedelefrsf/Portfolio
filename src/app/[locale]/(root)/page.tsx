@@ -2,6 +2,7 @@ import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { cn } from "@/lib/utils";
 import { Params } from "../types";
 import { BackgroundImage } from "./components/BackgroundImage";
+import { CTAs } from "./components/CTAs";
 import { Greetings } from "./components/Greetings";
 
 export default async function Home({ params }: Params) {
@@ -21,7 +22,19 @@ export default async function Home({ params }: Params) {
           "group",
         )}
       >
-        <Greetings />
+        <div
+          className={cn(
+            "flex",
+            "flex-col",
+            "my-10",
+            "mx-10",
+            "sm:w-1/3",
+            "z-10",
+          )}
+        >
+          <Greetings />
+          <CTAs />
+        </div>
         <BackgroundImage />
       </div>
     </section>
