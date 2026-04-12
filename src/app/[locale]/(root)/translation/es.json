@@ -3,8 +3,8 @@
     "badge": "Ingeniero de Software · Full Stack",
     "greeting": "Hola!👋\nSoy",
     "cta": {
-      "primary": "Ver Experiencia",
-      "secondary": "Contactar"
+      "primary": "Contactar",
+      "secondary": "Ver Experiencia"
     }
   }
 }
