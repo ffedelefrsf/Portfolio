@@ -1,11 +1,11 @@
-import { LanguageSwitcher } from "@/cross-site/ui/i18n/LanguageSwitcher";
 import { cn } from "@/lib/utils";
+import { DesktopLanguageSwitcher } from "../i18n/LanguageSwitcher/Desktop";
 import { ThemeToggle } from "../ThemeToggle";
 
 export function LangAndTheme() {
   return (
     <div className={cn("flex", "gap-2")}>
-      <LanguageSwitcher />
+      <DesktopLanguageSwitcher />
       <ThemeToggle
         className={cn(
           "cursor-pointer",

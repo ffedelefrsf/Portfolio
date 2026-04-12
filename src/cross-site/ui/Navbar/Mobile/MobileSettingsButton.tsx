@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { MobileLanguageSwitcher } from "../../i18n/MobileLanguageSwitcher";
+import { MobileLanguageSwitcher } from "../../i18n/LanguageSwitcher/Mobile";
 import { ThemeToggle } from "../../ThemeToggle";
 
 export function MobileSettingsButton() {
@@ -22,7 +22,10 @@ export function MobileSettingsButton() {
       )}
     >
       <MobileLanguageSwitcher />
-      <span className={cn("h-4", "w-px", "bg-border", "shrink-0")} aria-hidden="true" />
+      <span
+        className={cn("h-4", "w-px", "bg-border", "shrink-0")}
+        aria-hidden="true"
+      />
       <ThemeToggle
         className={cn(
           "flex",

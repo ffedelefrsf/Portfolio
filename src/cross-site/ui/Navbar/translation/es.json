@@ -6,6 +6,7 @@
   "contact": "Contacto",
   "openMenu": "Abrir menú",
   "closeMenu": "Cerrar menú",
+  "languageSelection": "Selección de lenguaje",
   "mobileSettings": {
     "switchLanguage": "Cambiar idioma a:",
     "switchToLight": "Cambiar a modo claro",
