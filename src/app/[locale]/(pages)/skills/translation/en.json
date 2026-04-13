@@ -1,56 +1,106 @@
 {
   "title": "Skills",
-  "subtitle": "Technologies and tools I've used across 7+ years of professional development.",
-  "categories": {
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "ai": "AI & Tools",
-    "testing": "Testing",
-    "cloudDevops": "Cloud & DevOps",
-    "languages": "Languages",
-    "databases": "Databases",
-    "auth": "Authentication",
-    "observability": "Observability & Analytics",
-    "design": "Design",
-    "management": "Management",
-    "methodologies": "Methodologies"
-  },
-  "proficiency": {
-    "title": "Proficiency",
-    "advanced": {
-      "name": "Advanced",
-      "description": "Can jump right in without difficulties nor causing tech debt."
+  "subtitle": "A breakdown of my technical expertise and the personal strengths I bring to every team and project.",
+  "hardSkills": {
+    "title": "Hard Skills",
+    "description": "Technologies, tools, and frameworks I've built professional experience with.\nMore information about each skill can be read clicking on them.",
+    "filter": {
+      "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed select this checkbox.",
+      "mostRelevant": "Show most relevant only"
     },
-    "solid": {
-      "name": "Solid",
-      "description": "Guaranteed autonomy, but some catch up first would be appreciated."
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ai": "AI & Tools",
+      "testing": "Testing",
+      "cloudDevops": "Cloud & DevOps",
+      "languages": "Languages",
+      "databases": "Databases",
+      "auth": "Authentication",
+      "observability": "Observability & Analytics",
+      "design": "Design",
+      "management": "Management",
+      "methodologies": "Methodologies"
     },
-    "basic": {
-      "name": "Basic",
-      "description": "Will make it work, but most likely cause some tech debt in the process."
+    "proficiency": {
+      "title": "Proficiency",
+      "advanced": {
+        "name": "Advanced",
+        "description": "Can jump right in without difficulties nor causing tech debt."
+      },
+      "solid": {
+        "name": "Solid",
+        "description": "Guaranteed autonomy, but some catch up first would be appreciated."
+      },
+      "basic": {
+        "name": "Basic",
+        "description": "Will make it work, but most likely cause some tech debt in the process."
+      }
+    },
+    "recency": {
+      "title": "Recency",
+      "fresh": {
+        "name": "Fresh",
+        "description": "Recent/Present activity."
+      },
+      "rusty": {
+        "name": "Rusty",
+        "description": "Has passed more than a year since last use."
+      },
+      "blurry": {
+        "name": "Blurry",
+        "description": "Hard to tell when it was used for the last time."
+      }
+    },
+    "experience": {
+      "yearsLabel": "{years}+ years",
+      "usedAt": "Used at"
     }
   },
-  "recency": {
-    "title": "Recency",
-    "fresh": {
-      "name": "Fresh",
-      "description": "Recent/Present activity."
-    },
-    "rusty": {
-      "name": "Rusty",
-      "description": "Has passed more than a year since last use."
-    },
-    "blurry": {
-      "name": "Blurry",
-      "description": "Hard to tell when it was used for the last time."
+  "softSkills": {
+    "title": "Soft Skills",
+    "description": "Personal traits and interpersonal abilities that shape how I work and collaborate.\nMore information about each skill can be read clicking on them.",
+    "strengths": {
+      "ownership": {
+        "title": "Ownership",
+        "description": "Taking full responsibility for projects and outcomes, proactively driving work forward, making decisions, and ensuring things get done without needing constant direction."
+      },
+      "leadership": {
+        "title": "Leadership",
+        "description": "Guiding projects from idea to delivery, and helping teams move in the right direction with clarity and confidence."
+      },
+      "mentorshipTeamDevelopment": {
+        "title": "Mentorship & team development",
+        "description": "Supporting teammates' growth through guidance, feedback, and knowledge sharing, while fostering a collaborative and inclusive environment."
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Clearly expressing ideas and translating complex technical concepts into understandable terms for different audiences, from engineers to stakeholders."
+      },
+      "problemSolving": {
+        "title": "Problem solving",
+        "description": "Approaching challenges with structured thinking, analyzing root causes, and finding efficient, scalable solutions rather than quick fixes."
+      },
+      "adaptability-learning": {
+        "title": "Adaptability & Learning",
+        "description": "Quickly adjusting to new technologies, tools, and environments while continuously improving skills and staying curious."
+      },
+      "reliability-work-ethic": {
+        "title": "Reliability & Work ethic",
+        "description": "Being consistent, accountable, and dependable—delivering quality work on time and taking responsibility for results."
+      },
+      "collaboration-team-mindset": {
+        "title": "Collaboration & Team mindset",
+        "description": "Working effectively with others, valuing different perspectives, and contributing to a positive and productive team dynamic."
+      },
+      "emotional-intelligence": {
+        "title": "Emotional intelligence",
+        "description": "Understanding and managing your own emotions while being aware of others', enabling better communication, empathy, and decision-making."
+      },
+      "conflictResolution": {
+        "title": "Conflict resolution",
+        "description": "Handling disagreements constructively, focusing on solutions, and maintaining healthy working relationships even in challenging situations."
+      }
     }
-  },
-  "experience": {
-    "yearsLabel": "{years}+ years",
-    "usedAt": "Used at"
-  },
-  "filter": {
-    "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed select this checkbox.\nMore information about each skill can be read clicking on them.",
-    "mostRelevant": "Show most relevant only"
   }
 }

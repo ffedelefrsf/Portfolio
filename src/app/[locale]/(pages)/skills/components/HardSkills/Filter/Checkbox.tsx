@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { cn } from "@/lib/utils";
-import { TRANSLATION_NAME } from "../../translation/config";
+import { TRANSLATION_NAME } from "../../../translation/config";
 
 export async function Checkbox() {
   const t = await getTranslations(TRANSLATION_NAME);
@@ -54,7 +54,7 @@ export async function Checkbox() {
           "hover:opacity-80",
         )}
       >
-        {t("filter.mostRelevant")}
+        {t("hardSkills.filter.mostRelevant")}
       </label>
     </>
   );

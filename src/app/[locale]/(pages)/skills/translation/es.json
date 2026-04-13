@@ -1,56 +1,106 @@
 {
   "title": "Skills",
-  "subtitle": "Tecnologías y herramientas utilizadas a lo largo de más de 7 años de desarrollo profesional.",
-  "categories": {
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "ai": "AI y herramientas",
-    "testing": "Pruebas",
-    "cloudDevops": "Cloud & DevOps",
-    "languages": "Lenguajes",
-    "databases": "Bases de datos",
-    "observability": "Monitoreo y datos",
-    "auth": "Autenticación",
-    "design": "Diseño",
-    "management": "Management",
-    "methodologies": "Metodologías"
-  },
-  "proficiency": {
-    "title": "Nivel",
-    "advanced": {
-      "name": "Avanzado",
-      "description": "Puede ser utilizado ahora mismo sin dificultades ni causando deuda técnica."
+  "subtitle": "Un desglose de mis conocimientos técnicos y las fortalezas personales que aporto a cada equipo y proyecto.",
+  "hardSkills": {
+    "title": "Habilidades Técnicas",
+    "description": "Tecnologías, herramientas y frameworks con los que he desarrollado experiencia profesional.\nMás información sobre cada skill puede obtenerse presionándolo.",
+    "filter": {
+      "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos chequea esta opción.",
+      "mostRelevant": "Mostrar sólo los más relevantes"
     },
-    "solid": {
-      "name": "Sólido",
-      "description": "Autonomía garantizada, pero un refresco de conocimientos no vendría mal."
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ai": "AI y herramientas",
+      "testing": "Pruebas",
+      "cloudDevops": "Cloud & DevOps",
+      "languages": "Lenguajes",
+      "databases": "Bases de datos",
+      "observability": "Monitoreo y datos",
+      "auth": "Autenticación",
+      "design": "Diseño",
+      "management": "Management",
+      "methodologies": "Metodologías"
     },
-    "basic": {
-      "name": "Básico",
-      "description": "Lo haré funcionar, pero seguramente cause deuda técnica en el proceso."
+    "proficiency": {
+      "title": "Nivel",
+      "advanced": {
+        "name": "Avanzado",
+        "description": "Puede ser utilizado ahora mismo sin dificultades ni causando deuda técnica."
+      },
+      "solid": {
+        "name": "Sólido",
+        "description": "Autonomía garantizada, pero un refresco de conocimientos no vendría mal."
+      },
+      "basic": {
+        "name": "Básico",
+        "description": "Lo haré funcionar, pero seguramente cause deuda técnica en el proceso."
+      }
+    },
+    "recency": {
+      "title": "Uso reciente",
+      "fresh": {
+        "name": "Fresco",
+        "description": "Actividad reciente/actual."
+      },
+      "rusty": {
+        "name": "Intermedio",
+        "description": "Ha pasado más de un año desde la última vez que se utilizó."
+      },
+      "blurry": {
+        "name": "Lejano",
+        "description": "Es difícil recordar la última vez que fue utilizado."
+      }
+    },
+    "experience": {
+      "yearsLabel": "{years}+ años",
+      "usedAt": "Usado en"
     }
   },
-  "recency": {
-    "title": "Uso reciente",
-    "fresh": {
-      "name": "Fresco",
-      "description": "Actividad reciente/actual."
-    },
-    "rusty": {
-      "name": "Intermedio",
-      "description": "Ha pasado más de un año desde la última vez que se utilizó."
-    },
-    "blurry": {
-      "name": "Lejano",
-      "description": "Es difícil recordar la última vez que fue utilizado."
+  "softSkills": {
+    "title": "Habilidades Blandas",
+    "description": "Rasgos personales y habilidades interpersonales que definen mi forma de trabajar y colaborar.\nMás información sobre cada skill puede obtenerse presionándolo.",
+    "strengths": {
+      "ownership": {
+        "title": "Sentido de pertenencia",
+        "description": "Asumir plena responsabilidad sobre proyectos y resultados, impulsando el trabajo de forma proactiva, tomando decisiones y asegurando que las cosas se completen sin necesidad de dirección constante."
+      },
+      "leadership": {
+        "title": "Liderazgo",
+        "description": "Guiar proyectos desde la idea hasta la entrega, y ayudar a los equipos a avanzar en la dirección correcta con claridad y confianza."
+      },
+      "mentorshipTeamDevelopment": {
+        "title": "Mentoría y desarrollo de equipos",
+        "description": "Apoyar el crecimiento de los compañeros mediante orientación, retroalimentación e intercambio de conocimiento, fomentando un entorno colaborativo e inclusivo."
+      },
+      "communication": {
+        "title": "Comunicación",
+        "description": "Expresar ideas con claridad y traducir conceptos técnicos complejos en términos comprensibles para distintas audiencias, desde ingenieros hasta stakeholders."
+      },
+      "problemSolving": {
+        "title": "Resolución de problemas",
+        "description": "Abordar los desafíos con pensamiento estructurado, analizando causas raíz y encontrando soluciones eficientes y escalables en lugar de parches rápidos."
+      },
+      "adaptability-learning": {
+        "title": "Adaptabilidad y aprendizaje",
+        "description": "Adaptarse rápidamente a nuevas tecnologías, herramientas y entornos, mejorando continuamente las habilidades y manteniendo la curiosidad."
+      },
+      "reliability-work-ethic": {
+        "title": "Fiabilidad y ética de trabajo",
+        "description": "Ser consistente, responsable y confiable: entregar trabajo de calidad a tiempo y asumir la responsabilidad de los resultados."
+      },
+      "collaboration-team-mindset": {
+        "title": "Colaboración y mentalidad de equipo",
+        "description": "Trabajar de forma efectiva con otros, valorar distintas perspectivas y contribuir a una dinámica de equipo positiva y productiva."
+      },
+      "emotional-intelligence": {
+        "title": "Inteligencia emocional",
+        "description": "Comprender y gestionar las propias emociones siendo consciente de las ajenas, lo que permite una mejor comunicación, empatía y toma de decisiones."
+      },
+      "conflictResolution": {
+        "title": "Resolución de conflictos",
+        "description": "Manejar los desacuerdos de forma constructiva, enfocándose en soluciones y manteniendo relaciones laborales sanas incluso en situaciones difíciles."
+      }
     }
-  },
-  "experience": {
-    "yearsLabel": "{years}+ años",
-    "usedAt": "Usado en"
-  },
-  "filter": {
-    "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos chequea esta opción. Más información sobre cada skill puede obtenerse presionándolos.",
-    "mostRelevant": "Mostrar sólo los más relevantes"
   }
 }

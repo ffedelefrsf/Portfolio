@@ -162,3 +162,16 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: ["SCRUM", "RUP", "Kanban"],
   },
 ];
+
+export const SOFT_SKILLS = [
+  "ownership",
+  "communication",
+  "problemSolving",
+  "conflictResolution",
+  "adaptability-learning",
+  "reliability-work-ethic",
+  "collaboration-team-mindset",
+  "emotional-intelligence",
+  "leadership",
+  "mentorshipTeamDevelopment",
+];

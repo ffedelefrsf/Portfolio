@@ -1,7 +1,8 @@
 import { PageWrapper } from "@/cross-site/ui/PageWrapper";
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
 import { Params } from "../../types";
-import { List } from "./components/List";
+import { HardSkills } from "./components/HardSkills";
+import { SoftSkills } from "./components/SoftSkills";
 import { TRANSLATION_NAME } from "./translation/config";
 
 export default async function SkillsPage({ params }: Params) {
@@ -10,7 +11,8 @@ export default async function SkillsPage({ params }: Params) {
 
   return (
     <PageWrapper translationName={TRANSLATION_NAME}>
-      <List />
+      <HardSkills />
+      <SoftSkills />
     </PageWrapper>
   );
 }

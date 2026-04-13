@@ -21,7 +21,9 @@ export async function ExperienceInfo({ skill }: { skill: string }) {
       <div>
         <div className={cn("flex", "items-start", "gap-2")}>
           <p className={cn("text-xs", "mb-0.5")}>
-            <span className={cn("underline")}>{t("experience.usedAt")}</span>
+            <span className={cn("underline")}>
+              {t("hardSkills.experience.usedAt")}
+            </span>
             <span>{": "}</span>
             {experienceInfo.entries.map((entry, index) => (
               <Fragment key={entry.id}>
@@ -53,7 +55,9 @@ export async function ExperienceInfo({ skill }: { skill: string }) {
               "whitespace-nowrap",
             )}
           >
-            {t("experience.yearsLabel", { years: experienceInfo.years })}
+            {t("hardSkills.experience.yearsLabel", {
+              years: experienceInfo.years,
+            })}
           </span>
         )}
       </div>

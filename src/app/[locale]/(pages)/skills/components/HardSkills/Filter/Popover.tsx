@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { TRANSLATION_NAME } from "../../translation/config";
+import { TRANSLATION_NAME } from "../../../translation/config";
 
 export async function Popover() {
   const t = await getTranslations(TRANSLATION_NAME);
@@ -22,12 +22,12 @@ export async function Popover() {
           "hover:text-foreground",
           "transition-colors",
         )}
-        aria-label={t("filter.mostRelevantTooltip")}
+        aria-label={t("hardSkills.filter.mostRelevantTooltip")}
       >
         <CircleHelp className={cn("size-3.5")} aria-hidden />
       </PopoverTrigger>
       <PopoverContent className={cn("whitespace-pre-line")}>
-        {t("filter.mostRelevantTooltip")}
+        {t("hardSkills.filter.mostRelevantTooltip")}
       </PopoverContent>
     </PopoverShadcn>
   );
