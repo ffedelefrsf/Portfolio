@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { SOFT_SKILLS } from "../../data";
 import { TRANSLATION_NAME } from "../../translation/config";
