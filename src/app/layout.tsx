@@ -4,8 +4,6 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { ClientProviders } from "@/cross-site/providers/ClientProviders";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,14 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Fausto Fedele",
-  description: "Fausto Fedele's portfolio",
-};
-
-export const viewport: Viewport = {
-  viewportFit: "cover",
-};
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export default function RootLayout({
   children,
@@ -57,3 +48,38 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://faustofedele.com"),
+  title: {
+    default: "Fausto Fedele",
+    template: "%s | Fausto Fedele",
+  },
+  description:
+    "Senior Software Engineer with 7+ years of experience shipping products across fintech, health, sports and more.",
+  authors: [{ name: "Fausto Fedele" }],
+  creator: "Fausto Fedele",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Fausto Fedele",
+    title: "Fausto Fedele — Senior Software Engineer",
+    description:
+      "Senior Software Engineer with 7+ years of experience shipping products across fintech, health, sports and more.",
+    locale: "en_US",
+    alternateLocale: ["es_AR"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fausto Fedele — Senior Software Engineer",
+    description:
+      "Senior Software Engineer with 7+ years of experience shipping products across fintech, health, sports and more.",
+  },
+};
+
+export const viewport: Viewport = {
+  viewportFit: "cover",
+};

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PageWrapper } from "@/cross-site/ui/PageWrapper";
 import { initializeI18N, SUPPORTED_LANGUAGES } from "@/i18n/utils";
@@ -50,6 +51,15 @@ export default async function ContactPage({ params }: Params) {
 
 export function generateStaticParams() {
   return SUPPORTED_LANGUAGES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: TRANSLATION_NAME });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
 }
 
 export const dynamic = "force-static";
