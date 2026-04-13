@@ -16,10 +16,16 @@ export function Title({
   iconImageURL,
   iconNodes,
 }: Props) {
+  const isCall = companyName.includes("Cooperativa");
   const isI2t = companyName.includes("i2T");
   return (
     <div className={cn("flex", "items-center", "gap-3")}>
-      <div className={cn("flex", "items-center", "gap-2")}>
+      <div
+        className={cn("flex", "items-center", "gap-2", {
+          "self-start": isCall,
+          "mt-0.5": isCall,
+        })}
+      >
         {iconImageURL && (
           <div
             className={cn("relative", "h-6.25", "w-6.25", {
