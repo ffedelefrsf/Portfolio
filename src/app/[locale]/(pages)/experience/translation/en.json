@@ -1,6 +1,6 @@
 {
   "title": "Experience",
-  "subtitle": "7+ years shipping products across fintech, health, sports, and more.",
+  "subtitle": "7+ years shipping products across fintech, health, sports and more.",
   "present": "Present",
   "workTypes": {
     "remote": "Remote",
@@ -16,8 +16,8 @@
       "role": "Senior Software Engineer",
       "client": "Consulting for NerdWallet · Credit Cards team",
       "highlights": [
-        "Led management, implementation, and delivery of new features for NerdWallet's main website",
-        "Turned product requirements into technical tasks, estimated timelines, and coordinated releases",
+        "Led management, implementation and delivery of new features for NerdWallet's main website",
+        "Turned product requirements into technical tasks, estimated timelines and coordinated releases",
         "Mentored new team members encouraging inclusive collaboration and reporting performance concerns",
         "Optimized frontend performance for Core Web Vitals and SEO",
         "Mastered observability and monitoring to identify and resolve issues proactively"
@@ -25,36 +25,37 @@
     },
     "exoMindset": {
       "role": "Senior Software Engineer",
-      "description": "Led product design, development, and delivery across multiple concurrent client projects as primary engineer and team lead",
+      "description": "Senior engineer and team lead across multiple simultaneous client projects at a growing software consultancy, contributing to architecture decisions, team setup, client relationships and end-to-end delivery",
       "projects": {
-        "meetknit": "Full software building of a secure web/mobile platform for storing and sharing information. Led a team of four and managed iOS/Android releases.",
-        "sigloXxi": "Integrated page to list all available university degrees. Project and architecture setup, recruiting, development estimation, and release support.",
-        "scoutSmartRecruit": "Full-cycle development of a mobile app for high school football players to publish profiles and secure scholarships.",
-        "scoutSmart": "Maintenance of a coaching app for reviewing player profiles and managing recruitment decisions.",
-        "lapMarketplace": "Product managing and development of a marketplace to sell Chilean-manufactured products on Amazon, Walmart, and eBay.",
-        "vialCard": "Full product lifecycle for a driver license creation and management system.",
-        "mySherlock": "Maintenance and development of a product matching and price comparison platform."
+        "meetknit": "Led development of a secure digital vault for storing sensitive personal records and end-of-life documents, accessible by trusted contacts. Rebuilt the client relationship after an earlier team struggled and led a cross-functional team through to final delivery.",
+        "sigloXxi": "Co-designed the architecture, recruited and onboarded the development team, defined delivery estimates and acted as tech lead throughout the build of a university degree catalog integration for Universidad Siglo XXI.",
+        "scoutSmartRecruit": "Built from scratch a React Native app for high school football players to create shareable recruitment profiles discoverable by college coaches, including the backend web services layer.",
+        "scoutSmart": "Maintained and updated a React Native coaching platform used by college football staff to browse, filter and evaluate high school recruit profiles.",
+        "lapMarketplace": "Built a multi-channel listing platform for a Chilean manufacturer to create, preview and publish product listings on Amazon, Walmart and eBay from a single interface, integrated with Odoo for back-office operations.",
+        "vialCard": "Owned the full lifecycle of a government-facing driver license issuance and management system, covering engineering, scrum facilitation, QA and delivery management simultaneously.",
+        "mySherlock": "Took over a price comparison platform that used scheduled scrapers to pull competitor marketplace data and surface it in side-by-side product tables for marketplace operators."
       }
     },
     "i2tSenior": {
       "role": "Full Stack Developer",
       "client": "Consulted for SanCor Salud · Order authorization & service provider teams",
       "highlights": [
-        "Built WordPress and Angular e-commerce websites for regional businesses",
-        "Senior Backend Engineer and tech lead at SanCor Salud",
-        "Led one of the company's most critical internal projects for healthcare professionals"
+        "Developed WordPress and Angular websites for regional businesses as part of i2T's consulting portfolio",
+        "Joined SanCor Salud's Authorization team, one of the most business-critical units at one of Argentina's leading health insurance companies, responsible for processing medical order authorizations for insured members",
+        "Progressed from Backend Engineer to Full Stack Developer to team tech lead within nine months, driving the modernization of a legacy IBM AS400 authorization system toward Java EE and Spring Boot"
       ]
     },
     "cooperativa": {
       "role": "Full Stack Mobile Developer",
       "highlights": [
-        "Built an Android app for agricultural producers to track transactions, account balances, and access to statistical reports"
+        "Built a native Android app for grain cooperative producers to consult checking account balances, grain stock levels and transaction history, designed to integrate with the cooperative's newly developed ERP system"
       ]
     },
     "i2tIntern": {
-      "role": "Internship — App Building Department",
+      "role": "Internship - App Building Department",
       "highlights": [
-        "R&D across PHP, Node.js, MySQL, VisualBasic, JasperReports, and SVN"
+        "Contributed to SuiteCRM module development, WordPress and Joomla customizations, JasperReports report building and MySQL stored procedure development for client-facing tools",
+        "Participated in R&D on Node.js and MySQL-backed web services for eTangram, an in-house ERP modernization initiative, working across PHP, VisualBasic and SVN"
       ]
     }
   }

@@ -18,43 +18,44 @@
       "highlights": [
         "Gestión, implementación y entrega de nuevas funcionalidades para el sitio principal de NerdWallet",
         "Descomposición de requerimientos de producto en tareas técnicas, estimación de tiempos y coordinación de releases",
-        "Mentoría a nuevos integrantes del equipo promoviendo una colaboración inclusiva",
+        "Mentoría a nuevos integrantes del equipo con foco en la colaboración inclusiva",
         "Optimización del rendimiento frontend (Core Web Vitals y SEO)",
-        "Dominio de observabilidad y monitoreo para identificar y resolver errores de forma proactiva"
+        "Dominio de observabilidad y monitoreo para la identificación y resolución proactiva de errores"
       ]
     },
     "exoMindset": {
       "role": "Ingeniero de Software Senior",
-      "description": "Liderazgo del diseño, desarrollo y entrega de múltiples proyectos simultáneos como ingeniero principal y tech lead.",
+      "description": "Rol de ingeniero senior y líder de equipos en múltiples proyectos simultáneos dentro de una consultora de software en crecimiento, con participación activa en arquitectura, armado de equipos, relación con clientes y entrega",
       "projects": {
-        "meetknit": "Ciclo completo de construcción de una plataforma web y móvil segura para almacenar y compartir información. Liderazgo de equipo y gestión de releases en iOS/Android.",
-        "sigloXxi": "Construcción de página integrada con el fin de listar carreras universitarias. Setup de proyecto y arquitectura, reclutamiento, estimación de desarrollo y soporte al release.",
-        "scoutSmartRecruit": "Desarrollo completo de una app móvil para jugadores de fútbol americano universitario donde pueden publicar perfiles y conseguir becas.",
-        "scoutSmart": "Mantenimiento (pequeños ajustes) de una app de coaches para revisar perfiles de jugadores y gestionar decisiones de reclutamiento.",
-        "lapMarketplace": "Product managing y desarrollo de un marketplace para vender productos fabricados en Chile en Amazon, Walmart y eBay.",
-        "vialCard": "Ciclo completo de producto para un sistema de creación y gestión de licencias de conducir.",
-        "mySherlock": "Mantenimiento y desarrollo de una plataforma para comparación de precios en diferentes supermercados."
+        "meetknit": "Liderazgo del desarrollo de un vault digital seguro para almacenar registros personales sensibles y documentos de última voluntad, accesibles por contactos de confianza. Recuperación de la relación con el cliente tras dificultades del equipo anterior y conducción de un equipo multidisciplinario hasta la entrega final.",
+        "sigloXxi": "Co-diseño de arquitectura, reclutamiento y formación del equipo de desarrollo, definición de estimaciones de entrega y rol de tech lead durante la construcción de una integración de catálogo de carreras para la Universidad Siglo XXI.",
+        "scoutSmartRecruit": "Construcción desde cero de una app React Native para que jugadores de fútbol americano universitario crearan perfiles de reclutamiento descubribles por entrenadores, incluyendo los servicios web del backend.",
+        "scoutSmart": "Mantenimiento y actualización de una plataforma React Native utilizada por cuerpos técnicos de fútbol americano para explorar, filtrar y evaluar perfiles de jugadores.",
+        "lapMarketplace": "Desarrollo de una plataforma multi-canal para que un fabricante chileno creara, previsualizara y publicara listings en Amazon, Walmart y eBay desde una única interfaz, integrada con Odoo para la gestión administrativa.",
+        "vialCard": "Ciclo completo de un sistema gubernamental de emisión y gestión de licencias de conducir, con cobertura simultánea de roles de ingeniería, scrum master, QA y delivery manager.",
+        "mySherlock": "Incorporación y mantenimiento de una plataforma de comparación de precios que utilizaba scrapers programados para recolectar datos de marketplaces competidores y mostrarlos en tablas comparativas para operadores del rubro."
       }
     },
     "i2tSenior": {
       "role": "Desarrollador Full Stack",
       "client": "Consultor en SanCor Salud · Autorizaciones y prestadores",
       "highlights": [
-        "Desarrollo de sitios e-commerce con WordPress y Angular para empresas regionales",
-        "Ingeniero Backend Senior y tech lead en SanCor Salud",
-        "Liderazgo de un proyectos interno crítico para profesionales de la salud"
+        "Desarrollo de sitios web con WordPress y Angular para empresas regionales dentro del portfolio de consultoría de i2T",
+        "Integración al equipo de Autorizaciones de SanCor Salud, una de las unidades más críticas de una de las aseguradoras de salud líderes de Argentina, responsable del procesamiento de autorizaciones de órdenes médicas para afiliados",
+        "Evolución de Ingeniero Backend a Desarrollador Full Stack y tech lead del equipo en nueve meses, con liderazgo en la modernización de un sistema legado IBM AS400 hacia Java EE y Spring Boot"
       ]
     },
     "cooperativa": {
       "role": "Desarrollador Full Stack Mobile",
       "highlights": [
-        "Desarrollo de una app Android para productores agropecuarios para seguir transacciones, saldos y reportes estadísticos"
+        "Desarrollo de una app Android nativa para productores de la cooperativa agropecuaria para consultar saldos en cuenta corriente, stock de granos e historial de transacciones, diseñada para integrarse con el nuevo ERP en desarrollo"
       ]
     },
     "i2tIntern": {
-      "role": "Pasantía — Departamento de Desarrollo de Apps",
+      "role": "Pasantía - Departamento de Desarrollo de Apps",
       "highlights": [
-        "Tareas de I+D en PHP, Node.js, MySQL, VisualBasic, JasperReports y SVN"
+        "Desarrollo de módulos en SuiteCRM, personalizaciones en WordPress y Joomla, reportes con JasperReports y procedimientos almacenados MySQL para herramientas orientadas a clientes",
+        "Tareas de I+D sobre servicios web en Node.js y MySQL para eTangram, una iniciativa interna de modernización del ERP, en PHP, VisualBasic y SVN"
       ]
     }
   }
