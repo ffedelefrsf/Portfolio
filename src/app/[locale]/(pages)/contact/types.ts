@@ -1,6 +1,11 @@
 import type { ElementType } from "react";
 
-export type ContactMethodId = "email" | "linkedin" | "github";
+export type ContactMethodId =
+  | "email"
+  | "linkedin"
+  | "github"
+  | "github-nw"
+  | "whatsapp";
 
 export type ContactMethod = {
   id: ContactMethodId;

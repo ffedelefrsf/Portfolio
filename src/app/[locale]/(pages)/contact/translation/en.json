@@ -8,12 +8,20 @@
       "label": "Email",
       "action": "Send an email"
     },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "action": "Send me a message"
+    },
     "linkedin": {
       "label": "LinkedIn",
       "action": "Connect on LinkedIn"
     },
+    "github-nw": {
+      "label": "GitHub (Work)",
+      "action": "View my work on GitHub (Work)"
+    },
     "github": {
-      "label": "GitHub",
+      "label": "GitHub (Personal)",
       "action": "View my work on GitHub"
     }
   }
