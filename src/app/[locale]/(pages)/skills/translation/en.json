@@ -5,7 +5,7 @@
     "title": "Hard Skills",
     "description": "Technologies, tools and frameworks I've built professional experience with.\nMore information about each skill can be read clicking on them.",
     "filter": {
-      "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed select this checkbox.",
+      "mostRelevantTooltip": "A reduced number of skills is presented to prevent old usages from adding noise to your read. If all skills are desired to be viewed deselect this checkbox.",
       "mostRelevant": "Show most relevant only"
     },
     "categories": {

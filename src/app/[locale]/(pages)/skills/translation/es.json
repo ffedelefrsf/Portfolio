@@ -5,7 +5,7 @@
     "title": "Habilidades Técnicas",
     "description": "Tecnologías, herramientas y frameworks con los que he desarrollado experiencia profesional.\nMás información sobre cada skill puede obtenerse presionándolo.",
     "filter": {
-      "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos chequea esta opción.",
+      "mostRelevantTooltip": "Un número reducido de skills se muestra para evitar que aquellos no tan actuales ofusquen la lectura, para ver todos desmarca esta opción.",
       "mostRelevant": "Mostrar sólo los más relevantes"
     },
     "categories": {
