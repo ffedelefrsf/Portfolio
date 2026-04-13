@@ -1,7 +1,7 @@
 import { Mail } from "lucide-react";
 import { GitHubIcon } from "./components/icons/GitHubIcon";
 import { LinkedInIcon } from "./components/icons/LinkedInIcon";
-import { WhatsApp } from "./icons/WhatsApp";
+import { WhatsApp } from "./components/icons/WhatsApp";
 import type { ContactMethod } from "./types";
 
 export const CONTACT_METHODS: ContactMethod[] = [

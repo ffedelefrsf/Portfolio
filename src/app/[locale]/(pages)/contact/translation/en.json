@@ -1,8 +1,12 @@
 {
   "title": "Contact",
   "subtitle": "Let's connect!",
-  "description": "My door is always open if you have a project in mind, an opportunity to share or just want to say hello.",
-  "availability": "Open to remote opportunities",
+  "description": "Whether you have a project in mind, an opportunity to explore or just want to geek out about tech, my door is always open. Don't hesitate to reach out even if you're not sure what to say.",
+  "openTo": "Particularly open to full-stack engineering challenges and remote roles.",
+  "availability": "Open to great opportunities.",
+  "responseTime": "Usually respond within 24h",
+  "timezone": "Argentina 🇦🇷 · UTC-3",
+  "preferredContact": "For professional inquiries, email or LinkedIn work best. For a quicker exchange, WhatsApp is the way.",
   "methods": {
     "email": {
       "label": "Email",

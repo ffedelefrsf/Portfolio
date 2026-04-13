@@ -1,8 +1,12 @@
 {
   "title": "Contacto",
   "subtitle": "Conectemos!",
-  "description": "Mi puerta siempre está abierta, no importa si tenés un proyecto en mente, una oportunidad para compartir o simplemente querés saludar.",
-  "availability": "Abierto a oportunidades remotas",
+  "description": "Ya sea que tengas un proyecto en mente, una oportunidad para explorar o simplemente quieras hablar de tecnología, mi puerta siempre está abierta. No dudes en escribirme aunque no sepas bien por dónde empezar.",
+  "openTo": "Particularmente abierto a desafíos de ingeniería full-stack y roles remotos.",
+  "availability": "Abierto a grandes oportunidades.",
+  "responseTime": "Suelo responder en menos de 24h",
+  "timezone": "Argentina 🇦🇷 · UTC-3",
+  "preferredContact": "Para consultas profesionales, el email o LinkedIn son la mejor opción. Para una charla más directa, WhatsApp es el camino.",
   "methods": {
     "email": {
       "label": "Email",
