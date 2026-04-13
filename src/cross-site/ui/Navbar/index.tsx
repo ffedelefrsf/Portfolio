@@ -23,7 +23,7 @@ export async function Navbar({ locale }: { locale: SupportedLanguage }) {
         "relative",
         "w-full",
         "sm:sticky",
-        "sm:h-16",
+        "sm:h-14",
         "sm:top-0",
         "sm:z-100",
       )}

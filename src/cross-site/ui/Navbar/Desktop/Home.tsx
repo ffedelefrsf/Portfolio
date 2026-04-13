@@ -26,17 +26,11 @@ export function Home() {
       )}
     >
       <HomeIcon
-        className={cn(
-          "w-6",
-          "h-6",
-          "sm:w-7.5",
-          "sm:h-7.5",
-          {
-            "fill-primary-400": isActive,
-            "light:fill-black": !isActive,
-            "dark:fill-white": !isActive,
-          },
-        )}
+        className={cn("w-6", "h-6", "sm:w-7.5", "sm:h-7.5", {
+          "fill-primary": isActive,
+          "light:fill-black": !isActive,
+          "dark:fill-white": !isActive,
+        })}
         aria-hidden="true"
       />
     </Link>

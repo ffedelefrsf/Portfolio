@@ -42,7 +42,7 @@ export function Desktop({ links }: { links: Link[] }) {
           )}
         >
           <Home />
-          <div className={cn("flex", "items-center", "gap-3")}>
+          <div className={cn("flex", "items-center", "h-full", "gap-3")}>
             {links.map(({ href, label }) => {
               return <NavLink key={href} href={href} label={label} />;
             })}
