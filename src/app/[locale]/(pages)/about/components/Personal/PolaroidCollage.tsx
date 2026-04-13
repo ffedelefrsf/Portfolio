@@ -41,7 +41,7 @@ export function PolaroidCollage({ name, items }: Props) {
               "xs:min-w-40",
               "sm:min-w-50",
               "w-43",
-              "xxs:w-50",
+              "2xs:w-50",
               "sm:w-60",
               styles.polaroid,
             )}
